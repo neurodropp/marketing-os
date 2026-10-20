@@ -1,39 +1,31 @@
-# Portability and integration
+# Host portability
 
-## Portable core
+The primary interface is a persistent brand folder, created with `workspace-init`. The user talks to the AI host; the host reads and writes the workspace. A Markdown file alone is not the project memory or an agent execution engine.
 
-Markdown instructions, JSON contracts and the English taxonomy can be read by any text-capable model with sufficient context. This is instructional portability, not an assurance that every model can execute every workflow correctly.
+| Host | Entry point | Setup |
+| --- | --- | --- |
+| Codex | AGENTS.md → START_HERE.md | Open the brand folder and request guided setup. |
+| Claude Code | CLAUDE.md → START_HERE.md | Start Claude Code in the brand folder and request guided setup. |
+| Claude Cowork | Explicit START_HERE.md instruction | Select the brand folder, ask Cowork to read START_HERE.md and retain that instruction in folder instructions. COWORK.md is guidance, not assumed automatic discovery. |
 
-A private GitHub repository requires authorized access. Pasting its URL into a chat may not load it. Clone it in an authorized environment or generate and upload a reviewed bundle.
+The wrappers route to the same local onboarding protocol, registry, specialist profiles, skills and second brain. Skills are loaded from the registry as files; this release does not install host-native slash commands or named subagent configurations. Actual delegation depends on host features, permissions and user authorization. Sequential role passes are labeled as such.
 
-## Chat-only mode
+Python 3.10+ is required for validated state operations. Verify shell, file and Python access in the actual environment. If unavailable, the agent can collect a sourced draft in onboarding/intake-draft.md and report that validated setup is pending. Do not pretend that the utility ran.
 
-Export a selected workflow; include only the project records needed. Upload or paste it into the host. Ask the model to perform labeled role passes. It can draft and reason without tools. It cannot save durable memory, access live sources, publish, or create genuinely independent workers unless the host supplies those functions.
+## Capabilities and permissions
 
-Save the session checkpoint and memory proposals yourself, then reconcile them into the authoritative second brain. Preserve project ID, sources and versions. Do not promote an unverified chat summary into a verified fact.
+Declared project capabilities do not grant access. Check actual tools independently. Native host memory may supplement the local second brain but cannot replace it. Move the whole workspace to switch hosts; do not rely on conversation history or hidden host-specific memory. Only load relevant files to manage context size.
 
-## File-capable assistant
+## Secondary chat export
 
-Open the repository, read START_HERE.md and select a private project workspace. The assistant can use the standard-library CLI if shell execution is available. AGENTS.md is a convenience for hosts that discover it; explicitly reading START_HERE.md remains the fallback.
+`python3 -m mos export --workflow ID --out FILE` remains available for a snapshot without file access. It is a secondary interoperability feature. It cannot supply automatic write-back, durable cross-session memory or independent agents.
 
-Skill folders use the Agent Skills structure. Native installation/discovery varies by product. Copying a skill alone carries its method and local references, but not the framework's orchestration or project memory. This repository does not alter global assistant configuration.
+## Sources and verification
 
-## Delegated or SDK runtime
+Host entry-point design was checked against official documentation on 2026-10-20:
 
-Implement an adapter that:
+- [Codex project instructions](https://developers.openai.com/codex/guides/agents-md)
+- [Claude Code project memory](https://code.claude.com/docs/en/memory)
+- [Claude Cowork setup](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)
 
-1. Binds an active project and authenticates tool access.
-2. Loads selected role/skill versions and the approved context packet.
-3. Creates real workers if supported and authorized.
-4. Enforces the dependency graph and action permissions.
-5. Receives and reviews structured handoffs.
-6. Serializes memory proposals and records authorized decisions.
-7. Persists run state, evidence and checkpoint.
-
-The repository supplies contracts and local persistence; a production SDK adapter, background scheduler, vector database, authenticated approvals and connector implementations are not included in this release.
-
-## Capability declaration
-
-Declare actual file, research, delegation and connector access at the start of a session. Settings in project.json are intended configuration, not proof of capability. Missing capabilities produce a useful draft/specification or a clearly scoped blocker. Never claim a connector ran because a workflow names one.
-
-Model context limits and tool APIs vary. Run the behavioral scenarios in the target host and record the model/version, capability mode and observed result before describing an integration as tested.
+Local tests verify portable folder creation, relocation, registry validation, onboarding persistence, confirmation and project isolation. End-to-end interactive interviews in all three products have not been certified. Instructions guide model behavior; deterministic utilities validate the persisted state they receive, not the truth of a user answer or the quality of marketing judgment.

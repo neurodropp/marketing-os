@@ -11,71 +11,50 @@ The repository is in English. Project deliverables can use the project's configu
 - Run a marketing assignment through documented agent roles and focused skills.
 - Start a private project workspace with versioned memory, sources, approvals and conflicts.
 - Use ten dependency-aware workflows: brand foundation, campaigns, offers, content, reputation, tracking incidents, retention, lifecycle, performance and strategic reviews.
-- Export a self-contained Markdown bundle for a chat that cannot read the repository.
+- Guide users through resumable brand setup and save deliverables in a standalone folder.
 - Validate registry references and workflow dependencies, pin a run to exact skill definitions, and record accepted handoffs.
 - Add or update skills, agents and workflows without changing the core project memory.
 
 The Python utilities perform local state management. They do **not** call an LLM, spawn agents, authenticate users, publish content, spend money or connect accounts. The host AI environment supplies those capabilities where available.
 
-## Choose an entry point
+## Start in Codex, Claude Code or Cowork
 
-| Environment | Start here | Actual behavior |
-| --- | --- | --- |
-| AI assistant with repository access | Ask it to read [START_HERE.md](START_HERE.md) | Loads selected roles, skills and project memory on demand. |
-| Chat with file upload or pasted context | Upload a generated Markdown bundle | Performs sequential role passes; persistence requires saving and reattaching checkpoints. |
-| Agent runtime with delegation | Use the same protocols and handoff contracts | Real subagents are possible only if supported and authorized by that host. |
-| Developer integration | Use `mos/`, registry, workflows and schemas | Provides a local control plane to integrate with a model SDK or tool runner. |
+Open this repository in your AI host and ask:
 
-No repository URL can guarantee automatic import, persistent memory or real multi-agent execution in every AI product. See [portability](docs/PORTABILITY.md) for the supported modes and limitations.
+> Create a brand workspace and guide me through setup. Save everything in the project folder so we can resume later.
 
-## Quick start
+The agent asks for the brand name and folder destination, then guides you through six short stages: identity, objectives, audience and offer, brand direction, resources, and materials. Answers are saved after each reply. Unknowns can remain open; the final summary is confirmed before setup is marked complete.
 
-Python **3.10 or later** is required for local utilities. There are no third-party Python dependencies.
+For Codex, the entry point is `AGENTS.md`; for Claude Code it is `CLAUDE.md`. In Cowork, select the folder and explicitly ask it to read `START_HERE.md`; retain that instruction in folder instructions. See [host setup](docs/PORTABILITY.md).
+
+## Folder quick start
+
+The AI can run these commands for you. Python **3.10+** is required; no third-party packages are needed.
 
 ```bash
 git clone https://github.com/neurodropp/marketing-os.git
 cd marketing-os
-python3 -m mos validate
-python3 -m unittest discover -s tests -v
-
-python3 -m mos init projects/demo-brand --id demo-brand --brand "Demo Brand"
-python3 -m mos memory-add projects/demo-brand --file examples/memory-proposal.json
-python3 -m mos memory-search projects/demo-brand audience
+python3 -m mos workspace-init ../my-brand --id my-brand --brand "My Brand"
 ```
 
-The example is synthetic. To accept it for a demonstration:
+Open the new `my-brand` folder and ask the agent to read `START_HERE.md` and begin onboarding. It includes its own framework snapshot, agent profiles, skills, local utilities, working folders and second brain. Moving the whole folder preserves the project.
 
-```bash
-python3 -m mos memory-accept projects/demo-brand audience-v1 \
-  --by "Demo operator" --authorization "Explicit acceptance for a synthetic local demonstration"
+```text
+my-brand/
+  AGENTS.md / CLAUDE.md / COWORK.md / START_HERE.md
+  .marketing-os/             Framework snapshot, agents and skills
+  onboarding/               Resumable setup and answer history
+  inbox/                    Source materials
+  brand/ research/ strategy/
+  campaigns/ content/ reports/ decisions/
+  memory/records/           Versioned knowledge and decisions
+  memory/sessions/          Session checkpoints
+  runs/                     Workflow progress
 ```
 
-This records a declaration of authorization, not an authenticated approval.
+The onboarding is conducted by the host AI, with local utilities enforcing state consistency. The user does not have to edit JSON. See [workspace behavior and lifecycle](docs/WORKSPACES.md).
 
-Create a run and a portable context package:
-
-```bash
-python3 -m mos plan projects/demo-brand --workflow campaign-launch \
-  --id first-campaign --objective "Prepare a campaign brief and launch readiness review"
-
-python3 -m mos export --workflow campaign-launch --out exports/campaign.md \
-  --project projects/demo-brand --memory-id audience-v1
-```
-
-Upload the reviewed bundle to the receiving chat and say:
-
-> Use the included Marketing OS workflow for the project in this snapshot. Start by identifying missing information relevant to my request, then execute the necessary role passes. Keep assumptions visible and return proposed memory updates plus a session checkpoint. My request is: …
-
-For a chat that needs the entire library, export `--workflow full` instead. This includes all roles, skills and workflow definitions; it does not instruct the model to run all agents. Prefer a focused bundle when the task is already known. Check the reported size against the receiving model's context limit.
-
-After a role or real agent has actually completed its work, record its handoff:
-
-```bash
-python3 -m mos complete-step projects/demo-brand --run first-campaign \
-  --step s1 --file examples/handoff.json
-```
-
-The handoff example demonstrates structure only. Replace it with the actual result in real work.
+From the brand folder, `python3 mos.py --help` exposes onboarding, memory and workflow commands. `python3 -m mos init` remains available from the framework for a minimal data-only project. Markdown export is retained as a secondary fallback for environments without folder access.
 
 ## Project second brain
 

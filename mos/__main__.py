@@ -4,12 +4,27 @@ import json
 import sys
 
 from . import core as c
+from . import onboarding, workspace
 
 
 def main(argv=None):
     p = argparse.ArgumentParser(description="Local Marketing OS workspace, memory and handoff utilities")
     sub = p.add_subparsers(dest="command", required=True)
     sub.add_parser("validate", help="Validate the repository graph, skills and workflows")
+    q = sub.add_parser("workspace-init", help="Create a standalone brand folder with guided onboarding")
+    q.add_argument("path")
+    q.add_argument("--id", required=True)
+    q.add_argument("--brand", required=True)
+    q = sub.add_parser("onboarding-status", help="Resume intake and return the next question block")
+    q.add_argument("project")
+    q = sub.add_parser("onboarding-answer", help="Persist sourced intake answers with revision checking")
+    q.add_argument("project")
+    q.add_argument("--file", required=True)
+    q = sub.add_parser("onboarding-confirm", help="Record explicit confirmation of the exact intake summary")
+    q.add_argument("project")
+    q.add_argument("--digest", required=True)
+    q.add_argument("--by", required=True)
+    q.add_argument("--authorization", required=True)
     q = sub.add_parser("init", help="Create an isolated project workspace")
     q.add_argument("path")
     q.add_argument("--id", required=True)
@@ -53,6 +68,14 @@ def main(argv=None):
     try:
         if a.command == "validate":
             result = c.validate_repo()
+        elif a.command == "workspace-init":
+            result = workspace.initialize(a.path, a.id, a.brand)
+        elif a.command == "onboarding-status":
+            result = onboarding.status(a.project)
+        elif a.command == "onboarding-answer":
+            result = onboarding.answer(a.project, c.read(a.file))
+        elif a.command == "onboarding-confirm":
+            result = onboarding.confirm(a.project, a.digest, a.by, a.authorization)
         elif a.command == "init":
             result = c.initialize(a.path, a.id, a.brand)
         elif a.command == "memory-add":

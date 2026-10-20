@@ -1,3 +1,16 @@
+# Validation record — 0.2.0
+
+Date: 2026-10-20.
+
+- Repository validation passed: 19 agents, 19 skills, 16 domains, 108 processes, 540 capabilities, 10 workflows.
+- All 35 local automated tests passed (28 existing plus seven onboarding/workspace tests).
+- A standalone workspace was moved to another path; its copied CLI successfully resumed intake and validated the bundled framework.
+- Tests cover stale answer revisions, cross-project refusal, symlink refusal, confirmation invalidation, immutable prior answer history, required/optional unknowns, and preservation of assumptions and external permissions.
+- Official host documentation was consulted for entry-point design. Interactive setup has not been tested end-to-end in Codex, Claude Code and Cowork; no native host certification is claimed.
+- No in-place framework snapshot updater or graphical wizard is included in this release.
+
+## Previous release record
+
 # Validation record — 0.1.0
 
 Date: 2026-10-20.
