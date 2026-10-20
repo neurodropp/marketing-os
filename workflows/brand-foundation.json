@@ -1,0 +1,87 @@
+{
+  "id": "brand-foundation",
+  "name": "Brand foundation",
+  "steps": [
+    {
+      "id": "s1",
+      "agent": "memory-steward",
+      "depends_on": [],
+      "output": "Current context, unknowns and conflicts"
+    },
+    {
+      "id": "s2",
+      "agent": "customer-research-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Evidence-backed audience and market synthesis"
+    },
+    {
+      "id": "s3",
+      "agent": "business-strategy-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Economic mandate and constraints"
+    },
+    {
+      "id": "s4",
+      "agent": "brand-strategy-agent",
+      "depends_on": [
+        "s2",
+        "s3"
+      ],
+      "output": "Brand platform proposal"
+    },
+    {
+      "id": "s5",
+      "agent": "positioning-agent",
+      "depends_on": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "output": "Positioning and proof proposal"
+    },
+    {
+      "id": "s6",
+      "agent": "offer-design-agent",
+      "depends_on": [
+        "s5"
+      ],
+      "output": "Offer structure proposal"
+    },
+    {
+      "id": "s7",
+      "agent": "journey-design-agent",
+      "depends_on": [
+        "s6"
+      ],
+      "output": "Journey and handoff specification"
+    },
+    {
+      "id": "s8",
+      "agent": "marketing-planning-agent",
+      "depends_on": [
+        "s7"
+      ],
+      "output": "Prioritized marketing roadmap"
+    },
+    {
+      "id": "s9",
+      "agent": "quality-reviewer",
+      "depends_on": [
+        "s8"
+      ],
+      "output": "Review with evidence and revision needs"
+    },
+    {
+      "id": "s10",
+      "agent": "memory-steward",
+      "depends_on": [
+        "s9"
+      ],
+      "output": "Versioned memory proposals and session checkpoint"
+    }
+  ]
+}

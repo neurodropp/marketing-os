@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Marketing OS step handoff",
+  "type": "object",
+  "required": [
+    "project_id",
+    "step_id",
+    "execution_mode",
+    "deliverable",
+    "sources",
+    "assumptions",
+    "acceptance",
+    "memory_proposals"
+  ],
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "step_id": {
+      "type": "string"
+    },
+    "execution_mode": {
+      "enum": [
+        "role-pass",
+        "delegated"
+      ]
+    },
+    "deliverable": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sources": {
+      "type": "array"
+    },
+    "assumptions": {
+      "type": "array"
+    },
+    "acceptance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "memory_proposals": {
+      "type": "array"
+    },
+    "verdict": {
+      "enum": [
+        "pass",
+        "revise",
+        "blocked"
+      ]
+    }
+  }
+}

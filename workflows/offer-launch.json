@@ -1,0 +1,68 @@
+{
+  "id": "offer-launch",
+  "name": "Offer launch",
+  "steps": [
+    {
+      "id": "s1",
+      "agent": "memory-steward",
+      "depends_on": [],
+      "output": "Current strategy and customer evidence"
+    },
+    {
+      "id": "s2",
+      "agent": "offer-design-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Scoped offer and commercial assumptions"
+    },
+    {
+      "id": "s3",
+      "agent": "positioning-agent",
+      "depends_on": [
+        "s2"
+      ],
+      "output": "Offer promise and evidence"
+    },
+    {
+      "id": "s4",
+      "agent": "journey-design-agent",
+      "depends_on": [
+        "s3"
+      ],
+      "output": "Conversion path"
+    },
+    {
+      "id": "s5",
+      "agent": "creative-strategy-agent",
+      "depends_on": [
+        "s4"
+      ],
+      "output": "Launch brief"
+    },
+    {
+      "id": "s6",
+      "agent": "marketing-planning-agent",
+      "depends_on": [
+        "s5"
+      ],
+      "output": "Resources and launch dependencies"
+    },
+    {
+      "id": "s7",
+      "agent": "quality-reviewer",
+      "depends_on": [
+        "s6"
+      ],
+      "output": "Readiness review"
+    },
+    {
+      "id": "s8",
+      "agent": "memory-steward",
+      "depends_on": [
+        "s7"
+      ],
+      "output": "Offer and decision proposals"
+    }
+  ]
+}

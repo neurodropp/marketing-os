@@ -1,0 +1,11 @@
+{
+  "id": "audience-v1",
+  "kind": "strategy",
+  "subject": "Primary audience",
+  "content": "Fictional demo assumption: independent design studios with small operations teams. Validate before using in a real brand.",
+  "evidence": [
+    "Synthetic demonstration brief; not market research"
+  ],
+  "sensitivity": "internal",
+  "review_after": "2027-01-01"
+}

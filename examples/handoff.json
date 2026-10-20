@@ -1,0 +1,14 @@
+{
+  "project_id": "demo-brand",
+  "step_id": "s1",
+  "execution_mode": "role-pass",
+  "deliverable": "Synthetic example: reviewed project context and identified missing offer and research evidence.",
+  "sources": [
+    "Synthetic demonstration brief"
+  ],
+  "assumptions": [
+    "No live market research has been performed."
+  ],
+  "acceptance": "Context inventory is complete for this demonstration; strategy remains provisional.",
+  "memory_proposals": []
+}

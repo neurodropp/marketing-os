@@ -1,0 +1,2925 @@
+{
+  "schema_version": "1.0",
+  "domains": [
+    {
+      "id": "F1",
+      "name": "Business & Commercial Strategy",
+      "skill": "business-strategy",
+      "processes": [
+        {
+          "id": "F1.01",
+          "name": "Business model",
+          "capabilities": [
+            {
+              "id": "F1.01.a",
+              "name": "Customer segments"
+            },
+            {
+              "id": "F1.01.b",
+              "name": "Corporate value proposition"
+            },
+            {
+              "id": "F1.01.c",
+              "name": "Revenue streams"
+            },
+            {
+              "id": "F1.01.d",
+              "name": "Cost structure and partners"
+            },
+            {
+              "id": "F1.01.e",
+              "name": "Economic advantage"
+            }
+          ]
+        },
+        {
+          "id": "F1.02",
+          "name": "Commercial objectives and planning",
+          "capabilities": [
+            {
+              "id": "F1.02.a",
+              "name": "Revenue margin and growth targets"
+            },
+            {
+              "id": "F1.02.b",
+              "name": "Forecasts and scenarios"
+            },
+            {
+              "id": "F1.02.c",
+              "name": "Sales capacity"
+            },
+            {
+              "id": "F1.02.d",
+              "name": "Product and market priorities"
+            },
+            {
+              "id": "F1.02.e",
+              "name": "Constraints and assumptions"
+            }
+          ]
+        },
+        {
+          "id": "F1.03",
+          "name": "Unit economics",
+          "capabilities": [
+            {
+              "id": "F1.03.a",
+              "name": "Revenue and margin per customer"
+            },
+            {
+              "id": "F1.03.b",
+              "name": "CAC and payback targets"
+            },
+            {
+              "id": "F1.03.c",
+              "name": "LTV and economic retention"
+            },
+            {
+              "id": "F1.03.d",
+              "name": "Contribution margin by offer and channel"
+            },
+            {
+              "id": "F1.03.e",
+              "name": "Viability thresholds"
+            }
+          ]
+        },
+        {
+          "id": "F1.04",
+          "name": "Revenue architecture",
+          "capabilities": [
+            {
+              "id": "F1.04.a",
+              "name": "One-off and recurring revenue"
+            },
+            {
+              "id": "F1.04.b",
+              "name": "Portfolio mix"
+            },
+            {
+              "id": "F1.04.c",
+              "name": "Account expansion"
+            },
+            {
+              "id": "F1.04.d",
+              "name": "Partner revenue"
+            },
+            {
+              "id": "F1.04.e",
+              "name": "Concentration risk"
+            }
+          ]
+        },
+        {
+          "id": "F1.05",
+          "name": "Commercial policy",
+          "capabilities": [
+            {
+              "id": "F1.05.a",
+              "name": "Discount rules"
+            },
+            {
+              "id": "F1.05.b",
+              "name": "Commercial terms"
+            },
+            {
+              "id": "F1.05.c",
+              "name": "Serviceable markets"
+            },
+            {
+              "id": "F1.05.d",
+              "name": "Fulfillment capacity"
+            },
+            {
+              "id": "F1.05.e",
+              "name": "Exception criteria"
+            }
+          ]
+        },
+        {
+          "id": "F1.06",
+          "name": "Marketing-business alignment",
+          "capabilities": [
+            {
+              "id": "F1.06.a",
+              "name": "Marketing mandate"
+            },
+            {
+              "id": "F1.06.b",
+              "name": "Shared growth definitions"
+            },
+            {
+              "id": "F1.06.c",
+              "name": "Volume quality and margin trade-offs"
+            },
+            {
+              "id": "F1.06.d",
+              "name": "Strategic resource allocation"
+            },
+            {
+              "id": "F1.06.e",
+              "name": "Objective review"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "name": "Customer & Market Intelligence",
+      "skill": "customer-research",
+      "processes": [
+        {
+          "id": "F2.01",
+          "name": "Market definition",
+          "capabilities": [
+            {
+              "id": "F2.01.a",
+              "name": "Category and alternatives"
+            },
+            {
+              "id": "F2.01.b",
+              "name": "Market size and trends"
+            },
+            {
+              "id": "F2.01.c",
+              "name": "Geographies and contexts"
+            },
+            {
+              "id": "F2.01.d",
+              "name": "Existing and emerging demand"
+            },
+            {
+              "id": "F2.01.e",
+              "name": "Barriers and external factors"
+            }
+          ]
+        },
+        {
+          "id": "F2.02",
+          "name": "Segmentation",
+          "capabilities": [
+            {
+              "id": "F2.02.a",
+              "name": "Needs and behavioral segments"
+            },
+            {
+              "id": "F2.02.b",
+              "name": "Value and accessibility"
+            },
+            {
+              "id": "F2.02.c",
+              "name": "Demand maturity"
+            },
+            {
+              "id": "F2.02.d",
+              "name": "Segment prioritization"
+            },
+            {
+              "id": "F2.02.e",
+              "name": "Excluded segments"
+            }
+          ]
+        },
+        {
+          "id": "F2.03",
+          "name": "ICP and buying unit",
+          "capabilities": [
+            {
+              "id": "F2.03.a",
+              "name": "Ideal customer profile"
+            },
+            {
+              "id": "F2.03.b",
+              "name": "Fit and non-fit criteria"
+            },
+            {
+              "id": "F2.03.c",
+              "name": "Decision makers and influencers"
+            },
+            {
+              "id": "F2.03.d",
+              "name": "Purchase triggers"
+            },
+            {
+              "id": "F2.03.e",
+              "name": "Intent signals"
+            }
+          ]
+        },
+        {
+          "id": "F2.04",
+          "name": "Customer research",
+          "capabilities": [
+            {
+              "id": "F2.04.a",
+              "name": "Interviews and observation"
+            },
+            {
+              "id": "F2.04.b",
+              "name": "Surveys"
+            },
+            {
+              "id": "F2.04.c",
+              "name": "Conversation review and support analysis"
+            },
+            {
+              "id": "F2.04.d",
+              "name": "Quantitative research"
+            },
+            {
+              "id": "F2.04.e",
+              "name": "Evidence quality and limitations"
+            }
+          ]
+        },
+        {
+          "id": "F2.05",
+          "name": "Jobs pains and gains",
+          "capabilities": [
+            {
+              "id": "F2.05.a",
+              "name": "Functional jobs"
+            },
+            {
+              "id": "F2.05.b",
+              "name": "Emotional and social jobs"
+            },
+            {
+              "id": "F2.05.c",
+              "name": "Friction and risks"
+            },
+            {
+              "id": "F2.05.d",
+              "name": "Desired outcomes"
+            },
+            {
+              "id": "F2.05.e",
+              "name": "Customer language"
+            }
+          ]
+        },
+        {
+          "id": "F2.06",
+          "name": "Competitors and alternatives",
+          "capabilities": [
+            {
+              "id": "F2.06.a",
+              "name": "Direct competitors"
+            },
+            {
+              "id": "F2.06.b",
+              "name": "Indirect alternatives and non-consumption"
+            },
+            {
+              "id": "F2.06.c",
+              "name": "Offers and pricing"
+            },
+            {
+              "id": "F2.06.d",
+              "name": "Messages and channels"
+            },
+            {
+              "id": "F2.06.e",
+              "name": "Parity and differentiation"
+            }
+          ]
+        },
+        {
+          "id": "F2.07",
+          "name": "Insight management",
+          "capabilities": [
+            {
+              "id": "F2.07.a",
+              "name": "Source repository"
+            },
+            {
+              "id": "F2.07.b",
+              "name": "Evidence classification"
+            },
+            {
+              "id": "F2.07.c",
+              "name": "Opportunity synthesis"
+            },
+            {
+              "id": "F2.07.d",
+              "name": "Testable hypotheses"
+            },
+            {
+              "id": "F2.07.e",
+              "name": "Customer model updates"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "name": "Brand Strategy & Identity",
+      "skill": "brand-strategy",
+      "processes": [
+        {
+          "id": "F3.01",
+          "name": "Brand foundations",
+          "capabilities": [
+            {
+              "id": "F3.01.a",
+              "name": "Purpose"
+            },
+            {
+              "id": "F3.01.b",
+              "name": "Mission"
+            },
+            {
+              "id": "F3.01.c",
+              "name": "Vision"
+            },
+            {
+              "id": "F3.01.d",
+              "name": "Values"
+            },
+            {
+              "id": "F3.01.e",
+              "name": "Brand promise"
+            }
+          ]
+        },
+        {
+          "id": "F3.02",
+          "name": "Brand architecture",
+          "capabilities": [
+            {
+              "id": "F3.02.a",
+              "name": "Corporate and product relationships"
+            },
+            {
+              "id": "F3.02.b",
+              "name": "Portfolio and naming"
+            },
+            {
+              "id": "F3.02.c",
+              "name": "Endorsement"
+            },
+            {
+              "id": "F3.02.d",
+              "name": "Co-branding"
+            },
+            {
+              "id": "F3.02.e",
+              "name": "Extension rules"
+            }
+          ]
+        },
+        {
+          "id": "F3.03",
+          "name": "Verbal identity",
+          "capabilities": [
+            {
+              "id": "F3.03.a",
+              "name": "Personality"
+            },
+            {
+              "id": "F3.03.b",
+              "name": "Tone of voice"
+            },
+            {
+              "id": "F3.03.c",
+              "name": "Vocabulary"
+            },
+            {
+              "id": "F3.03.d",
+              "name": "Identity messages"
+            },
+            {
+              "id": "F3.03.e",
+              "name": "Writing guidelines"
+            }
+          ]
+        },
+        {
+          "id": "F3.04",
+          "name": "Visual and sensory identity",
+          "capabilities": [
+            {
+              "id": "F3.04.a",
+              "name": "Graphic system"
+            },
+            {
+              "id": "F3.04.b",
+              "name": "Typography color and imagery"
+            },
+            {
+              "id": "F3.04.c",
+              "name": "Motion and audio"
+            },
+            {
+              "id": "F3.04.d",
+              "name": "Accessibility"
+            },
+            {
+              "id": "F3.04.e",
+              "name": "Applications and templates"
+            }
+          ]
+        },
+        {
+          "id": "F3.05",
+          "name": "Brand experience",
+          "capabilities": [
+            {
+              "id": "F3.05.a",
+              "name": "Experience principles"
+            },
+            {
+              "id": "F3.05.b",
+              "name": "Touchpoint consistency"
+            },
+            {
+              "id": "F3.05.c",
+              "name": "Packaging and physical presence"
+            },
+            {
+              "id": "F3.05.d",
+              "name": "Service behavior"
+            },
+            {
+              "id": "F3.05.e",
+              "name": "Recognition"
+            }
+          ]
+        },
+        {
+          "id": "F3.06",
+          "name": "Brand governance",
+          "capabilities": [
+            {
+              "id": "F3.06.a",
+              "name": "Brand book"
+            },
+            {
+              "id": "F3.06.b",
+              "name": "Approvals"
+            },
+            {
+              "id": "F3.06.c",
+              "name": "Asset management"
+            },
+            {
+              "id": "F3.06.d",
+              "name": "Consistency checks"
+            },
+            {
+              "id": "F3.06.e",
+              "name": "Identity evolution"
+            }
+          ]
+        },
+        {
+          "id": "F3.07",
+          "name": "Brand equity and reputation",
+          "capabilities": [
+            {
+              "id": "F3.07.a",
+              "name": "Awareness and salience"
+            },
+            {
+              "id": "F3.07.b",
+              "name": "Associations"
+            },
+            {
+              "id": "F3.07.c",
+              "name": "Trust"
+            },
+            {
+              "id": "F3.07.d",
+              "name": "Perception"
+            },
+            {
+              "id": "F3.07.e",
+              "name": "Reputation risks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F4",
+      "name": "Positioning & Value Proposition",
+      "skill": "positioning",
+      "processes": [
+        {
+          "id": "F4.01",
+          "name": "Category choice",
+          "capabilities": [
+            {
+              "id": "F4.01.a",
+              "name": "Frame of reference"
+            },
+            {
+              "id": "F4.01.b",
+              "name": "Existing or new category"
+            },
+            {
+              "id": "F4.01.c",
+              "name": "Perceived alternatives"
+            },
+            {
+              "id": "F4.01.d",
+              "name": "Selection criteria"
+            },
+            {
+              "id": "F4.01.e",
+              "name": "Category trade-offs"
+            }
+          ]
+        },
+        {
+          "id": "F4.02",
+          "name": "Audience priority",
+          "capabilities": [
+            {
+              "id": "F4.02.a",
+              "name": "Primary segment"
+            },
+            {
+              "id": "F4.02.b",
+              "name": "Priority use cases"
+            },
+            {
+              "id": "F4.02.c",
+              "name": "Demand served"
+            },
+            {
+              "id": "F4.02.d",
+              "name": "Intentional exclusions"
+            },
+            {
+              "id": "F4.02.e",
+              "name": "Purchase contexts"
+            }
+          ]
+        },
+        {
+          "id": "F4.03",
+          "name": "Differentiation",
+          "capabilities": [
+            {
+              "id": "F4.03.a",
+              "name": "Points of parity"
+            },
+            {
+              "id": "F4.03.b",
+              "name": "Relevant differences"
+            },
+            {
+              "id": "F4.03.c",
+              "name": "Defensible advantages"
+            },
+            {
+              "id": "F4.03.d",
+              "name": "Competitive comparison"
+            },
+            {
+              "id": "F4.03.e",
+              "name": "Imitation risks"
+            }
+          ]
+        },
+        {
+          "id": "F4.04",
+          "name": "Value proposition",
+          "capabilities": [
+            {
+              "id": "F4.04.a",
+              "name": "Job and promised outcome"
+            },
+            {
+              "id": "F4.04.b",
+              "name": "Functional and emotional benefits"
+            },
+            {
+              "id": "F4.04.c",
+              "name": "Costs and sacrifices"
+            },
+            {
+              "id": "F4.04.d",
+              "name": "Reasons to believe"
+            },
+            {
+              "id": "F4.04.e",
+              "name": "Value proof"
+            }
+          ]
+        },
+        {
+          "id": "F4.05",
+          "name": "USP and core message",
+          "capabilities": [
+            {
+              "id": "F4.05.a",
+              "name": "Promise formulation"
+            },
+            {
+              "id": "F4.05.b",
+              "name": "Distinctive benefit"
+            },
+            {
+              "id": "F4.05.c",
+              "name": "Proof points"
+            },
+            {
+              "id": "F4.05.d",
+              "name": "Segment variants"
+            },
+            {
+              "id": "F4.05.e",
+              "name": "Claim boundaries"
+            }
+          ]
+        },
+        {
+          "id": "F4.06",
+          "name": "Positioning validation",
+          "capabilities": [
+            {
+              "id": "F4.06.a",
+              "name": "Comprehension testing"
+            },
+            {
+              "id": "F4.06.b",
+              "name": "Relevance"
+            },
+            {
+              "id": "F4.06.c",
+              "name": "Credibility"
+            },
+            {
+              "id": "F4.06.d",
+              "name": "Perceived differentiation"
+            },
+            {
+              "id": "F4.06.e",
+              "name": "Evidence-based updates"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F5",
+      "name": "Offer & Monetization Strategy",
+      "skill": "offer-design",
+      "processes": [
+        {
+          "id": "F5.01",
+          "name": "Offer-market fit",
+          "capabilities": [
+            {
+              "id": "F5.01.a",
+              "name": "Problem served"
+            },
+            {
+              "id": "F5.01.b",
+              "name": "Outcomes and features"
+            },
+            {
+              "id": "F5.01.c",
+              "name": "Audience and use cases"
+            },
+            {
+              "id": "F5.01.d",
+              "name": "Adoption barriers"
+            },
+            {
+              "id": "F5.01.e",
+              "name": "Fit evidence"
+            }
+          ]
+        },
+        {
+          "id": "F5.02",
+          "name": "Portfolio architecture",
+          "capabilities": [
+            {
+              "id": "F5.02.a",
+              "name": "Core offer"
+            },
+            {
+              "id": "F5.02.b",
+              "name": "Entry offer"
+            },
+            {
+              "id": "F5.02.c",
+              "name": "Premium offer"
+            },
+            {
+              "id": "F5.02.d",
+              "name": "Bundles"
+            },
+            {
+              "id": "F5.02.e",
+              "name": "Offer sequence"
+            }
+          ]
+        },
+        {
+          "id": "F5.03",
+          "name": "Value stack",
+          "capabilities": [
+            {
+              "id": "F5.03.a",
+              "name": "Components"
+            },
+            {
+              "id": "F5.03.b",
+              "name": "Included services"
+            },
+            {
+              "id": "F5.03.c",
+              "name": "Bonuses"
+            },
+            {
+              "id": "F5.03.d",
+              "name": "Guarantees"
+            },
+            {
+              "id": "F5.03.e",
+              "name": "Proof and risk reduction"
+            }
+          ]
+        },
+        {
+          "id": "F5.04",
+          "name": "Pricing",
+          "capabilities": [
+            {
+              "id": "F5.04.a",
+              "name": "Pricing metric"
+            },
+            {
+              "id": "F5.04.b",
+              "name": "Tiers and packages"
+            },
+            {
+              "id": "F5.04.c",
+              "name": "Willingness to pay"
+            },
+            {
+              "id": "F5.04.d",
+              "name": "Discounts and promotions"
+            },
+            {
+              "id": "F5.04.e",
+              "name": "Profitability and constraints"
+            }
+          ]
+        },
+        {
+          "id": "F5.05",
+          "name": "Lifecycle monetization",
+          "capabilities": [
+            {
+              "id": "F5.05.a",
+              "name": "Upsell"
+            },
+            {
+              "id": "F5.05.b",
+              "name": "Downsell"
+            },
+            {
+              "id": "F5.05.c",
+              "name": "Cross-sell"
+            },
+            {
+              "id": "F5.05.d",
+              "name": "Renewal"
+            },
+            {
+              "id": "F5.05.e",
+              "name": "Reactivation offer"
+            }
+          ]
+        },
+        {
+          "id": "F5.06",
+          "name": "Offer go-to-market",
+          "capabilities": [
+            {
+              "id": "F5.06.a",
+              "name": "Launch plan"
+            },
+            {
+              "id": "F5.06.b",
+              "name": "Packaging"
+            },
+            {
+              "id": "F5.06.c",
+              "name": "Sales channels"
+            },
+            {
+              "id": "F5.06.d",
+              "name": "Sales enablement"
+            },
+            {
+              "id": "F5.06.e",
+              "name": "Post-launch feedback"
+            }
+          ]
+        },
+        {
+          "id": "F5.07",
+          "name": "Portfolio management",
+          "capabilities": [
+            {
+              "id": "F5.07.a",
+              "name": "Offer performance"
+            },
+            {
+              "id": "F5.07.b",
+              "name": "Cannibalization"
+            },
+            {
+              "id": "F5.07.c",
+              "name": "Updates"
+            },
+            {
+              "id": "F5.07.d",
+              "name": "Phase-out"
+            },
+            {
+              "id": "F5.07.e",
+              "name": "New opportunities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F6",
+      "name": "Customer Journey & Funnel Architecture",
+      "skill": "journey-design",
+      "processes": [
+        {
+          "id": "F6.01",
+          "name": "Journey mapping",
+          "capabilities": [
+            {
+              "id": "F6.01.a",
+              "name": "Pre-purchase purchase and post-purchase stages"
+            },
+            {
+              "id": "F6.01.b",
+              "name": "Customer goals"
+            },
+            {
+              "id": "F6.01.c",
+              "name": "Triggers"
+            },
+            {
+              "id": "F6.01.d",
+              "name": "Friction"
+            },
+            {
+              "id": "F6.01.e",
+              "name": "Moments of truth"
+            }
+          ]
+        },
+        {
+          "id": "F6.02",
+          "name": "Touchpoint architecture",
+          "capabilities": [
+            {
+              "id": "F6.02.a",
+              "name": "Owned touchpoints"
+            },
+            {
+              "id": "F6.02.b",
+              "name": "Paid touchpoints"
+            },
+            {
+              "id": "F6.02.c",
+              "name": "Earned and partner touchpoints"
+            },
+            {
+              "id": "F6.02.d",
+              "name": "Physical and human touchpoints"
+            },
+            {
+              "id": "F6.02.e",
+              "name": "Consistency and handoffs"
+            }
+          ]
+        },
+        {
+          "id": "F6.03",
+          "name": "Funnel design",
+          "capabilities": [
+            {
+              "id": "F6.03.a",
+              "name": "Entry points"
+            },
+            {
+              "id": "F6.03.b",
+              "name": "Microconversions"
+            },
+            {
+              "id": "F6.03.c",
+              "name": "Primary conversion"
+            },
+            {
+              "id": "F6.03.d",
+              "name": "Exits and returns"
+            },
+            {
+              "id": "F6.03.e",
+              "name": "Alternative paths"
+            }
+          ]
+        },
+        {
+          "id": "F6.04",
+          "name": "Lead and sales journey",
+          "capabilities": [
+            {
+              "id": "F6.04.a",
+              "name": "Capture"
+            },
+            {
+              "id": "F6.04.b",
+              "name": "Qualification"
+            },
+            {
+              "id": "F6.04.c",
+              "name": "Routing"
+            },
+            {
+              "id": "F6.04.d",
+              "name": "Nurture"
+            },
+            {
+              "id": "F6.04.e",
+              "name": "Sales handoff and feedback"
+            }
+          ]
+        },
+        {
+          "id": "F6.05",
+          "name": "Lifecycle design",
+          "capabilities": [
+            {
+              "id": "F6.05.a",
+              "name": "Onboarding"
+            },
+            {
+              "id": "F6.05.b",
+              "name": "Activation"
+            },
+            {
+              "id": "F6.05.c",
+              "name": "Adoption"
+            },
+            {
+              "id": "F6.05.d",
+              "name": "Retention"
+            },
+            {
+              "id": "F6.05.e",
+              "name": "Advocacy and reactivation"
+            }
+          ]
+        },
+        {
+          "id": "F6.06",
+          "name": "CRM orchestration",
+          "capabilities": [
+            {
+              "id": "F6.06.a",
+              "name": "Events and states"
+            },
+            {
+              "id": "F6.06.b",
+              "name": "Dynamic segments"
+            },
+            {
+              "id": "F6.06.c",
+              "name": "Triggers"
+            },
+            {
+              "id": "F6.06.d",
+              "name": "Contact rules"
+            },
+            {
+              "id": "F6.06.e",
+              "name": "Suppressions and preferences"
+            }
+          ]
+        },
+        {
+          "id": "F6.07",
+          "name": "Experience requirements",
+          "capabilities": [
+            {
+              "id": "F6.07.a",
+              "name": "Accessibility"
+            },
+            {
+              "id": "F6.07.b",
+              "name": "Cross-channel continuity"
+            },
+            {
+              "id": "F6.07.c",
+              "name": "Response times"
+            },
+            {
+              "id": "F6.07.d",
+              "name": "Friction management"
+            },
+            {
+              "id": "F6.07.e",
+              "name": "Stage metrics"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F7",
+      "name": "Marketing Infrastructure & Planning",
+      "skill": "marketing-planning",
+      "processes": [
+        {
+          "id": "F7.01",
+          "name": "Marketing plan",
+          "capabilities": [
+            {
+              "id": "F7.01.a",
+              "name": "Objectives and KPIs"
+            },
+            {
+              "id": "F7.01.b",
+              "name": "Priority audiences and offers"
+            },
+            {
+              "id": "F7.01.c",
+              "name": "Channel strategy"
+            },
+            {
+              "id": "F7.01.d",
+              "name": "Calendar and roadmap"
+            },
+            {
+              "id": "F7.01.e",
+              "name": "Dependencies"
+            }
+          ]
+        },
+        {
+          "id": "F7.02",
+          "name": "Budget and capacity",
+          "capabilities": [
+            {
+              "id": "F7.02.a",
+              "name": "Budget by objective"
+            },
+            {
+              "id": "F7.02.b",
+              "name": "People and skills"
+            },
+            {
+              "id": "F7.02.c",
+              "name": "Vendors"
+            },
+            {
+              "id": "F7.02.d",
+              "name": "Initial allocation"
+            },
+            {
+              "id": "F7.02.e",
+              "name": "Reserves and thresholds"
+            }
+          ]
+        },
+        {
+          "id": "F7.03",
+          "name": "Digital stack",
+          "capabilities": [
+            {
+              "id": "F7.03.a",
+              "name": "Website and CMS"
+            },
+            {
+              "id": "F7.03.b",
+              "name": "CRM"
+            },
+            {
+              "id": "F7.03.c",
+              "name": "Marketing automation"
+            },
+            {
+              "id": "F7.03.d",
+              "name": "Advertising technology"
+            },
+            {
+              "id": "F7.03.e",
+              "name": "Integrations and APIs"
+            }
+          ]
+        },
+        {
+          "id": "F7.04",
+          "name": "Data and tracking design",
+          "capabilities": [
+            {
+              "id": "F7.04.a",
+              "name": "Event taxonomy"
+            },
+            {
+              "id": "F7.04.b",
+              "name": "Identity and lead IDs"
+            },
+            {
+              "id": "F7.04.c",
+              "name": "Conversion tracking"
+            },
+            {
+              "id": "F7.04.d",
+              "name": "Data quality"
+            },
+            {
+              "id": "F7.04.e",
+              "name": "Consent and data retention"
+            }
+          ]
+        },
+        {
+          "id": "F7.05",
+          "name": "Operations enablement",
+          "capabilities": [
+            {
+              "id": "F7.05.a",
+              "name": "Asset repository"
+            },
+            {
+              "id": "F7.05.b",
+              "name": "Workflows and tickets"
+            },
+            {
+              "id": "F7.05.c",
+              "name": "Templates"
+            },
+            {
+              "id": "F7.05.d",
+              "name": "SOPs"
+            },
+            {
+              "id": "F7.05.e",
+              "name": "Access and permissions"
+            }
+          ]
+        },
+        {
+          "id": "F7.06",
+          "name": "Governance and compliance",
+          "capabilities": [
+            {
+              "id": "F7.06.a",
+              "name": "Roles and decision rights"
+            },
+            {
+              "id": "F7.06.b",
+              "name": "Approvals"
+            },
+            {
+              "id": "F7.06.c",
+              "name": "Privacy"
+            },
+            {
+              "id": "F7.06.d",
+              "name": "Claims and brand review"
+            },
+            {
+              "id": "F7.06.e",
+              "name": "Quality controls and audit trail"
+            }
+          ]
+        },
+        {
+          "id": "F7.07",
+          "name": "Organizational alignment",
+          "capabilities": [
+            {
+              "id": "F7.07.a",
+              "name": "Marketing-sales SLA"
+            },
+            {
+              "id": "F7.07.b",
+              "name": "Product feedback"
+            },
+            {
+              "id": "F7.07.c",
+              "name": "Customer service coordination"
+            },
+            {
+              "id": "F7.07.d",
+              "name": "Decision cadence"
+            },
+            {
+              "id": "F7.07.e",
+              "name": "Escalation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "O1",
+      "name": "Messaging & Creative Strategy",
+      "skill": "creative-strategy",
+      "processes": [
+        {
+          "id": "O1.01",
+          "name": "Message architecture",
+          "capabilities": [
+            {
+              "id": "O1.01.a",
+              "name": "Message hierarchy"
+            },
+            {
+              "id": "O1.01.b",
+              "name": "Segment benefits"
+            },
+            {
+              "id": "O1.01.c",
+              "name": "Objections"
+            },
+            {
+              "id": "O1.01.d",
+              "name": "Proof points"
+            },
+            {
+              "id": "O1.01.e",
+              "name": "Calls to action"
+            }
+          ]
+        },
+        {
+          "id": "O1.02",
+          "name": "Audience and funnel messaging",
+          "capabilities": [
+            {
+              "id": "O1.02.a",
+              "name": "Awareness messages"
+            },
+            {
+              "id": "O1.02.b",
+              "name": "Consideration messages"
+            },
+            {
+              "id": "O1.02.c",
+              "name": "Conversion messages"
+            },
+            {
+              "id": "O1.02.d",
+              "name": "Retention messages"
+            },
+            {
+              "id": "O1.02.e",
+              "name": "Context variants"
+            }
+          ]
+        },
+        {
+          "id": "O1.03",
+          "name": "Creative concept",
+          "capabilities": [
+            {
+              "id": "O1.03.a",
+              "name": "Big idea"
+            },
+            {
+              "id": "O1.03.b",
+              "name": "Angle"
+            },
+            {
+              "id": "O1.03.c",
+              "name": "Hook"
+            },
+            {
+              "id": "O1.03.d",
+              "name": "Narrative"
+            },
+            {
+              "id": "O1.03.e",
+              "name": "Creative format"
+            }
+          ]
+        },
+        {
+          "id": "O1.04",
+          "name": "Campaign brief",
+          "capabilities": [
+            {
+              "id": "O1.04.a",
+              "name": "Objective"
+            },
+            {
+              "id": "O1.04.b",
+              "name": "Audience"
+            },
+            {
+              "id": "O1.04.c",
+              "name": "Offer"
+            },
+            {
+              "id": "O1.04.d",
+              "name": "Channels and placements"
+            },
+            {
+              "id": "O1.04.e",
+              "name": "Constraints and success criteria"
+            }
+          ]
+        },
+        {
+          "id": "O1.05",
+          "name": "Content strategy",
+          "capabilities": [
+            {
+              "id": "O1.05.a",
+              "name": "Content pillars"
+            },
+            {
+              "id": "O1.05.b",
+              "name": "Themes"
+            },
+            {
+              "id": "O1.05.c",
+              "name": "Evergreen and campaign mix"
+            },
+            {
+              "id": "O1.05.d",
+              "name": "Calendar"
+            },
+            {
+              "id": "O1.05.e",
+              "name": "Distribution and reuse"
+            }
+          ]
+        },
+        {
+          "id": "O1.06",
+          "name": "Creative learning agenda",
+          "capabilities": [
+            {
+              "id": "O1.06.a",
+              "name": "Message hypotheses"
+            },
+            {
+              "id": "O1.06.b",
+              "name": "Test variants"
+            },
+            {
+              "id": "O1.06.c",
+              "name": "Learning criteria"
+            },
+            {
+              "id": "O1.06.d",
+              "name": "Evidence catalog"
+            },
+            {
+              "id": "O1.06.e",
+              "name": "Brief updates"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "O2",
+      "name": "Copywriting & Content Production",
+      "skill": "content-production",
+      "processes": [
+        {
+          "id": "O2.01",
+          "name": "Editorial production",
+          "capabilities": [
+            {
+              "id": "O2.01.a",
+              "name": "Research and outline"
+            },
+            {
+              "id": "O2.01.b",
+              "name": "Writing"
+            },
+            {
+              "id": "O2.01.c",
+              "name": "Editing"
+            },
+            {
+              "id": "O2.01.d",
+              "name": "Fact checking and sources"
+            },
+            {
+              "id": "O2.01.e",
+              "name": "Publishing"
+            }
+          ]
+        },
+        {
+          "id": "O2.02",
+          "name": "Direct-response copy",
+          "capabilities": [
+            {
+              "id": "O2.02.a",
+              "name": "Headlines and hooks"
+            },
+            {
+              "id": "O2.02.b",
+              "name": "Body copy"
+            },
+            {
+              "id": "O2.02.c",
+              "name": "Calls to action"
+            },
+            {
+              "id": "O2.02.d",
+              "name": "Objections and proof"
+            },
+            {
+              "id": "O2.02.e",
+              "name": "Variants and localization"
+            }
+          ]
+        },
+        {
+          "id": "O2.03",
+          "name": "Visual and multimedia production",
+          "capabilities": [
+            {
+              "id": "O2.03.a",
+              "name": "Design"
+            },
+            {
+              "id": "O2.03.b",
+              "name": "Photography"
+            },
+            {
+              "id": "O2.03.c",
+              "name": "Video"
+            },
+            {
+              "id": "O2.03.d",
+              "name": "Audio"
+            },
+            {
+              "id": "O2.03.e",
+              "name": "Motion and adapted formats"
+            }
+          ]
+        },
+        {
+          "id": "O2.04",
+          "name": "Channel assets",
+          "capabilities": [
+            {
+              "id": "O2.04.a",
+              "name": "Social assets"
+            },
+            {
+              "id": "O2.04.b",
+              "name": "Email assets"
+            },
+            {
+              "id": "O2.04.c",
+              "name": "Advertising assets"
+            },
+            {
+              "id": "O2.04.d",
+              "name": "Website and landing assets"
+            },
+            {
+              "id": "O2.04.e",
+              "name": "Event and sales materials"
+            }
+          ]
+        },
+        {
+          "id": "O2.05",
+          "name": "SEO content",
+          "capabilities": [
+            {
+              "id": "O2.05.a",
+              "name": "Intent and queries"
+            },
+            {
+              "id": "O2.05.b",
+              "name": "Content structure"
+            },
+            {
+              "id": "O2.05.c",
+              "name": "On-page optimization"
+            },
+            {
+              "id": "O2.05.d",
+              "name": "Editorial linking"
+            },
+            {
+              "id": "O2.05.e",
+              "name": "Updates"
+            }
+          ]
+        },
+        {
+          "id": "O2.06",
+          "name": "Production workflow",
+          "capabilities": [
+            {
+              "id": "O2.06.a",
+              "name": "Brief"
+            },
+            {
+              "id": "O2.06.b",
+              "name": "Assignment"
+            },
+            {
+              "id": "O2.06.c",
+              "name": "Review"
+            },
+            {
+              "id": "O2.06.d",
+              "name": "Approval"
+            },
+            {
+              "id": "O2.06.e",
+              "name": "Versioning and asset management"
+            }
+          ]
+        },
+        {
+          "id": "O2.07",
+          "name": "Repurposing",
+          "capabilities": [
+            {
+              "id": "O2.07.a",
+              "name": "Format derivatives"
+            },
+            {
+              "id": "O2.07.b",
+              "name": "Modularization"
+            },
+            {
+              "id": "O2.07.c",
+              "name": "Translation and adaptation"
+            },
+            {
+              "id": "O2.07.d",
+              "name": "Evergreen refresh"
+            },
+            {
+              "id": "O2.07.e",
+              "name": "Asset retirement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "O3",
+      "name": "Traffic & Demand Generation",
+      "skill": "demand-generation",
+      "processes": [
+        {
+          "id": "O3.01",
+          "name": "Organic search",
+          "capabilities": [
+            {
+              "id": "O3.01.a",
+              "name": "Technical SEO"
+            },
+            {
+              "id": "O3.01.b",
+              "name": "On-page SEO"
+            },
+            {
+              "id": "O3.01.c",
+              "name": "Internal linking"
+            },
+            {
+              "id": "O3.01.d",
+              "name": "Authority and digital PR"
+            },
+            {
+              "id": "O3.01.e",
+              "name": "Visibility monitoring"
+            }
+          ]
+        },
+        {
+          "id": "O3.02",
+          "name": "Paid search and shopping",
+          "capabilities": [
+            {
+              "id": "O3.02.a",
+              "name": "Keywords and audiences"
+            },
+            {
+              "id": "O3.02.b",
+              "name": "Account structure"
+            },
+            {
+              "id": "O3.02.c",
+              "name": "Feeds and ads"
+            },
+            {
+              "id": "O3.02.d",
+              "name": "Bidding and budget"
+            },
+            {
+              "id": "O3.02.e",
+              "name": "Traffic quality"
+            }
+          ]
+        },
+        {
+          "id": "O3.03",
+          "name": "Paid social and display",
+          "capabilities": [
+            {
+              "id": "O3.03.a",
+              "name": "Campaigns and ad sets"
+            },
+            {
+              "id": "O3.03.b",
+              "name": "Audiences"
+            },
+            {
+              "id": "O3.03.c",
+              "name": "Creatives and placements"
+            },
+            {
+              "id": "O3.03.d",
+              "name": "Delivery"
+            },
+            {
+              "id": "O3.03.e",
+              "name": "Frequency and saturation"
+            }
+          ]
+        },
+        {
+          "id": "O3.04",
+          "name": "Organic distribution",
+          "capabilities": [
+            {
+              "id": "O3.04.a",
+              "name": "Social publishing"
+            },
+            {
+              "id": "O3.04.b",
+              "name": "Newsletter distribution"
+            },
+            {
+              "id": "O3.04.c",
+              "name": "Syndication"
+            },
+            {
+              "id": "O3.04.d",
+              "name": "Community distribution"
+            },
+            {
+              "id": "O3.04.e",
+              "name": "Employee advocacy"
+            }
+          ]
+        },
+        {
+          "id": "O3.05",
+          "name": "Partnerships and acquisition referrals",
+          "capabilities": [
+            {
+              "id": "O3.05.a",
+              "name": "Partner selection"
+            },
+            {
+              "id": "O3.05.b",
+              "name": "Co-marketing"
+            },
+            {
+              "id": "O3.05.c",
+              "name": "Affiliates"
+            },
+            {
+              "id": "O3.05.d",
+              "name": "Referral programs"
+            },
+            {
+              "id": "O3.05.e",
+              "name": "Agreements and measurement"
+            }
+          ]
+        },
+        {
+          "id": "O3.06",
+          "name": "PR events and field marketing",
+          "capabilities": [
+            {
+              "id": "O3.06.a",
+              "name": "Media relations"
+            },
+            {
+              "id": "O3.06.b",
+              "name": "Influencer and creator relations"
+            },
+            {
+              "id": "O3.06.c",
+              "name": "Events and webinars"
+            },
+            {
+              "id": "O3.06.d",
+              "name": "Sponsorship"
+            },
+            {
+              "id": "O3.06.e",
+              "name": "Acquisition follow-up"
+            }
+          ]
+        },
+        {
+          "id": "O3.07",
+          "name": "Channel management",
+          "capabilities": [
+            {
+              "id": "O3.07.a",
+              "name": "Channel fit"
+            },
+            {
+              "id": "O3.07.b",
+              "name": "Calendar"
+            },
+            {
+              "id": "O3.07.c",
+              "name": "Pacing"
+            },
+            {
+              "id": "O3.07.d",
+              "name": "Traffic quality"
+            },
+            {
+              "id": "O3.07.e",
+              "name": "Cross-channel coordination"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "O4",
+      "name": "Conversion & Sales Enablement",
+      "skill": "conversion-enablement",
+      "processes": [
+        {
+          "id": "O4.01",
+          "name": "Conversion surfaces",
+          "capabilities": [
+            {
+              "id": "O4.01.a",
+              "name": "Landing pages"
+            },
+            {
+              "id": "O4.01.b",
+              "name": "Product pages"
+            },
+            {
+              "id": "O4.01.c",
+              "name": "Forms"
+            },
+            {
+              "id": "O4.01.d",
+              "name": "Checkout"
+            },
+            {
+              "id": "O4.01.e",
+              "name": "Booking and chat"
+            }
+          ]
+        },
+        {
+          "id": "O4.02",
+          "name": "Lead capture",
+          "capabilities": [
+            {
+              "id": "O4.02.a",
+              "name": "Lead magnets"
+            },
+            {
+              "id": "O4.02.b",
+              "name": "Forms"
+            },
+            {
+              "id": "O4.02.c",
+              "name": "Consent and preferences"
+            },
+            {
+              "id": "O4.02.d",
+              "name": "Deduplication"
+            },
+            {
+              "id": "O4.02.e",
+              "name": "Immediate response"
+            }
+          ]
+        },
+        {
+          "id": "O4.03",
+          "name": "Lead qualification",
+          "capabilities": [
+            {
+              "id": "O4.03.a",
+              "name": "MQL and SQL definitions"
+            },
+            {
+              "id": "O4.03.b",
+              "name": "Fit and intent"
+            },
+            {
+              "id": "O4.03.c",
+              "name": "Scoring"
+            },
+            {
+              "id": "O4.03.d",
+              "name": "Routing"
+            },
+            {
+              "id": "O4.03.e",
+              "name": "Reasoned disqualification"
+            }
+          ]
+        },
+        {
+          "id": "O4.04",
+          "name": "Nurturing",
+          "capabilities": [
+            {
+              "id": "O4.04.a",
+              "name": "Email sequences"
+            },
+            {
+              "id": "O4.04.b",
+              "name": "Objection-handling content"
+            },
+            {
+              "id": "O4.04.c",
+              "name": "Reminders"
+            },
+            {
+              "id": "O4.04.d",
+              "name": "Conversion remarketing"
+            },
+            {
+              "id": "O4.04.e",
+              "name": "Sales handoff"
+            }
+          ]
+        },
+        {
+          "id": "O4.05",
+          "name": "Sales enablement",
+          "capabilities": [
+            {
+              "id": "O4.05.a",
+              "name": "Sales narrative"
+            },
+            {
+              "id": "O4.05.b",
+              "name": "One-pagers and decks"
+            },
+            {
+              "id": "O4.05.c",
+              "name": "Case studies"
+            },
+            {
+              "id": "O4.05.d",
+              "name": "FAQs and objections"
+            },
+            {
+              "id": "O4.05.e",
+              "name": "Sales feedback"
+            }
+          ]
+        },
+        {
+          "id": "O4.06",
+          "name": "Commerce conversion",
+          "capabilities": [
+            {
+              "id": "O4.06.a",
+              "name": "Offer presentation"
+            },
+            {
+              "id": "O4.06.b",
+              "name": "Checkout"
+            },
+            {
+              "id": "O4.06.c",
+              "name": "Approved promotions"
+            },
+            {
+              "id": "O4.06.d",
+              "name": "Abandonment recovery"
+            },
+            {
+              "id": "O4.06.e",
+              "name": "Transaction confirmation"
+            }
+          ]
+        },
+        {
+          "id": "O4.07",
+          "name": "Conversion operations",
+          "capabilities": [
+            {
+              "id": "O4.07.a",
+              "name": "Path QA"
+            },
+            {
+              "id": "O4.07.b",
+              "name": "Error monitoring"
+            },
+            {
+              "id": "O4.07.c",
+              "name": "Contact SLAs"
+            },
+            {
+              "id": "O4.07.d",
+              "name": "Lost lead management"
+            },
+            {
+              "id": "O4.07.e",
+              "name": "Funnel continuity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "O5",
+      "name": "Community & Relationship Management",
+      "skill": "community-management",
+      "processes": [
+        {
+          "id": "O5.01",
+          "name": "Community management",
+          "capabilities": [
+            {
+              "id": "O5.01.a",
+              "name": "Moderation"
+            },
+            {
+              "id": "O5.01.b",
+              "name": "Responses"
+            },
+            {
+              "id": "O5.01.c",
+              "name": "Member activation"
+            },
+            {
+              "id": "O5.01.d",
+              "name": "Community events"
+            },
+            {
+              "id": "O5.01.e",
+              "name": "Rules and safety"
+            }
+          ]
+        },
+        {
+          "id": "O5.02",
+          "name": "Social engagement",
+          "capabilities": [
+            {
+              "id": "O5.02.a",
+              "name": "Comments"
+            },
+            {
+              "id": "O5.02.b",
+              "name": "Messages"
+            },
+            {
+              "id": "O5.02.c",
+              "name": "Organic conversations"
+            },
+            {
+              "id": "O5.02.d",
+              "name": "Creators and ambassadors"
+            },
+            {
+              "id": "O5.02.e",
+              "name": "Escalation"
+            }
+          ]
+        },
+        {
+          "id": "O5.03",
+          "name": "Social listening",
+          "capabilities": [
+            {
+              "id": "O5.03.a",
+              "name": "Mentions"
+            },
+            {
+              "id": "O5.03.b",
+              "name": "Emerging themes"
+            },
+            {
+              "id": "O5.03.c",
+              "name": "Qualitative sentiment"
+            },
+            {
+              "id": "O5.03.d",
+              "name": "Recurring questions"
+            },
+            {
+              "id": "O5.03.e",
+              "name": "System feedback"
+            }
+          ]
+        },
+        {
+          "id": "O5.04",
+          "name": "Reputation response",
+          "capabilities": [
+            {
+              "id": "O5.04.a",
+              "name": "Review management"
+            },
+            {
+              "id": "O5.04.b",
+              "name": "Public issues"
+            },
+            {
+              "id": "O5.04.c",
+              "name": "Crisis protocol"
+            },
+            {
+              "id": "O5.04.d",
+              "name": "Coordinated response"
+            },
+            {
+              "id": "O5.04.e",
+              "name": "Post-event learning"
+            }
+          ]
+        },
+        {
+          "id": "O5.05",
+          "name": "Customer dialogue",
+          "capabilities": [
+            {
+              "id": "O5.05.a",
+              "name": "Feedback"
+            },
+            {
+              "id": "O5.05.b",
+              "name": "Customer stories"
+            },
+            {
+              "id": "O5.05.c",
+              "name": "Commercial inquiries"
+            },
+            {
+              "id": "O5.05.d",
+              "name": "Support interface"
+            },
+            {
+              "id": "O5.05.e",
+              "name": "Closing the loop"
+            }
+          ]
+        },
+        {
+          "id": "O5.06",
+          "name": "Community advocacy",
+          "capabilities": [
+            {
+              "id": "O5.06.a",
+              "name": "Promoter identification"
+            },
+            {
+              "id": "O5.06.b",
+              "name": "Testimonials"
+            },
+            {
+              "id": "O5.06.c",
+              "name": "User-generated content"
+            },
+            {
+              "id": "O5.06.d",
+              "name": "Relationship referrals"
+            },
+            {
+              "id": "O5.06.e",
+              "name": "Recognition and protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "O6",
+      "name": "Customer Lifecycle & Monetization",
+      "skill": "lifecycle-marketing",
+      "processes": [
+        {
+          "id": "O6.01",
+          "name": "Marketing onboarding",
+          "capabilities": [
+            {
+              "id": "O6.01.a",
+              "name": "Welcome"
+            },
+            {
+              "id": "O6.01.b",
+              "name": "Expectations"
+            },
+            {
+              "id": "O6.01.c",
+              "name": "Initial education"
+            },
+            {
+              "id": "O6.01.d",
+              "name": "Activation"
+            },
+            {
+              "id": "O6.01.e",
+              "name": "At-risk customer identification"
+            }
+          ]
+        },
+        {
+          "id": "O6.02",
+          "name": "Lifecycle communications",
+          "capabilities": [
+            {
+              "id": "O6.02.a",
+              "name": "Email SMS and push triggers"
+            },
+            {
+              "id": "O6.02.b",
+              "name": "Dynamic segments"
+            },
+            {
+              "id": "O6.02.c",
+              "name": "Frequency and contact pressure"
+            },
+            {
+              "id": "O6.02.d",
+              "name": "Personalization"
+            },
+            {
+              "id": "O6.02.e",
+              "name": "Preferences"
+            }
+          ]
+        },
+        {
+          "id": "O6.03",
+          "name": "Retention",
+          "capabilities": [
+            {
+              "id": "O6.03.a",
+              "name": "Engagement"
+            },
+            {
+              "id": "O6.03.b",
+              "name": "Churn prevention"
+            },
+            {
+              "id": "O6.03.c",
+              "name": "Loyalty programs"
+            },
+            {
+              "id": "O6.03.d",
+              "name": "Renewals"
+            },
+            {
+              "id": "O6.03.e",
+              "name": "Perceived value"
+            }
+          ]
+        },
+        {
+          "id": "O6.04",
+          "name": "Expansion",
+          "capabilities": [
+            {
+              "id": "O6.04.a",
+              "name": "Upsell"
+            },
+            {
+              "id": "O6.04.b",
+              "name": "Cross-sell"
+            },
+            {
+              "id": "O6.04.c",
+              "name": "Bundles"
+            },
+            {
+              "id": "O6.04.d",
+              "name": "Upgrades"
+            },
+            {
+              "id": "O6.04.e",
+              "name": "Timing and eligibility"
+            }
+          ]
+        },
+        {
+          "id": "O6.05",
+          "name": "Save and win-back",
+          "capabilities": [
+            {
+              "id": "O6.05.a",
+              "name": "Churn signals"
+            },
+            {
+              "id": "O6.05.b",
+              "name": "Downsell"
+            },
+            {
+              "id": "O6.05.c",
+              "name": "Reactivation"
+            },
+            {
+              "id": "O6.05.d",
+              "name": "Inactive customer recovery"
+            },
+            {
+              "id": "O6.05.e",
+              "name": "Loss reasons"
+            }
+          ]
+        },
+        {
+          "id": "O6.06",
+          "name": "Advocacy and referrals",
+          "capabilities": [
+            {
+              "id": "O6.06.a",
+              "name": "NPS and feedback signals"
+            },
+            {
+              "id": "O6.06.b",
+              "name": "Review requests"
+            },
+            {
+              "id": "O6.06.c",
+              "name": "Referrals"
+            },
+            {
+              "id": "O6.06.d",
+              "name": "Case studies"
+            },
+            {
+              "id": "O6.06.e",
+              "name": "Alumni and customer community"
+            }
+          ]
+        },
+        {
+          "id": "O6.07",
+          "name": "Lifecycle operations",
+          "capabilities": [
+            {
+              "id": "O6.07.a",
+              "name": "Customer state"
+            },
+            {
+              "id": "O6.07.b",
+              "name": "Automations"
+            },
+            {
+              "id": "O6.07.c",
+              "name": "QA and suppressions"
+            },
+            {
+              "id": "O6.07.d",
+              "name": "Support handoff"
+            },
+            {
+              "id": "O6.07.e",
+              "name": "Program evaluation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G1",
+      "name": "Analytics & Performance Intelligence",
+      "skill": "performance-analysis",
+      "processes": [
+        {
+          "id": "G1.01",
+          "name": "Measurement framework",
+          "capabilities": [
+            {
+              "id": "G1.01.a",
+              "name": "North-star and KPIs"
+            },
+            {
+              "id": "G1.01.b",
+              "name": "Metric tree"
+            },
+            {
+              "id": "G1.01.c",
+              "name": "Definitions"
+            },
+            {
+              "id": "G1.01.d",
+              "name": "Targets and thresholds"
+            },
+            {
+              "id": "G1.01.e",
+              "name": "Quality criteria"
+            }
+          ]
+        },
+        {
+          "id": "G1.02",
+          "name": "Data quality",
+          "capabilities": [
+            {
+              "id": "G1.02.a",
+              "name": "Event validation"
+            },
+            {
+              "id": "G1.02.b",
+              "name": "Deduplication"
+            },
+            {
+              "id": "G1.02.c",
+              "name": "Source reconciliation"
+            },
+            {
+              "id": "G1.02.d",
+              "name": "Completeness"
+            },
+            {
+              "id": "G1.02.e",
+              "name": "Anomaly monitoring"
+            }
+          ]
+        },
+        {
+          "id": "G1.03",
+          "name": "Funnel and journey analytics",
+          "capabilities": [
+            {
+              "id": "G1.03.a",
+              "name": "Stage conversion rates"
+            },
+            {
+              "id": "G1.03.b",
+              "name": "Drop-off"
+            },
+            {
+              "id": "G1.03.c",
+              "name": "Time to convert"
+            },
+            {
+              "id": "G1.03.d",
+              "name": "Path analysis"
+            },
+            {
+              "id": "G1.03.e",
+              "name": "Segments and cohorts"
+            }
+          ]
+        },
+        {
+          "id": "G1.04",
+          "name": "Channel and campaign analytics",
+          "capabilities": [
+            {
+              "id": "G1.04.a",
+              "name": "Reach and traffic"
+            },
+            {
+              "id": "G1.04.b",
+              "name": "Lead quality"
+            },
+            {
+              "id": "G1.04.c",
+              "name": "Spend and returns"
+            },
+            {
+              "id": "G1.04.d",
+              "name": "Measurable incrementality"
+            },
+            {
+              "id": "G1.04.e",
+              "name": "Channel comparison"
+            }
+          ]
+        },
+        {
+          "id": "G1.05",
+          "name": "Customer economics",
+          "capabilities": [
+            {
+              "id": "G1.05.a",
+              "name": "CAC"
+            },
+            {
+              "id": "G1.05.b",
+              "name": "LTV"
+            },
+            {
+              "id": "G1.05.c",
+              "name": "Payback"
+            },
+            {
+              "id": "G1.05.d",
+              "name": "Retention and churn"
+            },
+            {
+              "id": "G1.05.e",
+              "name": "Margin by segment and offer"
+            }
+          ]
+        },
+        {
+          "id": "G1.06",
+          "name": "Attribution and causality",
+          "capabilities": [
+            {
+              "id": "G1.06.a",
+              "name": "Attribution rules"
+            },
+            {
+              "id": "G1.06.b",
+              "name": "Model limitations"
+            },
+            {
+              "id": "G1.06.c",
+              "name": "Lift tests"
+            },
+            {
+              "id": "G1.06.d",
+              "name": "Counterfactual analysis"
+            },
+            {
+              "id": "G1.06.e",
+              "name": "Evidence triangulation"
+            }
+          ]
+        },
+        {
+          "id": "G1.07",
+          "name": "Reporting and insights",
+          "capabilities": [
+            {
+              "id": "G1.07.a",
+              "name": "Dashboards"
+            },
+            {
+              "id": "G1.07.b",
+              "name": "Operational reporting"
+            },
+            {
+              "id": "G1.07.c",
+              "name": "Root cause analysis"
+            },
+            {
+              "id": "G1.07.d",
+              "name": "Recommendations"
+            },
+            {
+              "id": "G1.07.e",
+              "name": "Decision log"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G2",
+      "name": "Experimentation & Optimization",
+      "skill": "experimentation",
+      "processes": [
+        {
+          "id": "G2.01",
+          "name": "Opportunity discovery",
+          "capabilities": [
+            {
+              "id": "G2.01.a",
+              "name": "Friction diagnosis"
+            },
+            {
+              "id": "G2.01.b",
+              "name": "Research ideas"
+            },
+            {
+              "id": "G2.01.c",
+              "name": "Segment analysis"
+            },
+            {
+              "id": "G2.01.d",
+              "name": "Impact and effort estimates"
+            },
+            {
+              "id": "G2.01.e",
+              "name": "Prioritization"
+            }
+          ]
+        },
+        {
+          "id": "G2.02",
+          "name": "Experiment design",
+          "capabilities": [
+            {
+              "id": "G2.02.a",
+              "name": "Hypothesis"
+            },
+            {
+              "id": "G2.02.b",
+              "name": "Primary metric and guardrails"
+            },
+            {
+              "id": "G2.02.c",
+              "name": "Population"
+            },
+            {
+              "id": "G2.02.d",
+              "name": "Test design"
+            },
+            {
+              "id": "G2.02.e",
+              "name": "Stop and decision criteria"
+            }
+          ]
+        },
+        {
+          "id": "G2.03",
+          "name": "Creative and messaging tests",
+          "capabilities": [
+            {
+              "id": "G2.03.a",
+              "name": "Angles"
+            },
+            {
+              "id": "G2.03.b",
+              "name": "Hooks"
+            },
+            {
+              "id": "G2.03.c",
+              "name": "Copy"
+            },
+            {
+              "id": "G2.03.d",
+              "name": "Visuals and formats"
+            },
+            {
+              "id": "G2.03.e",
+              "name": "Proof and calls to action"
+            }
+          ]
+        },
+        {
+          "id": "G2.04",
+          "name": "Offer and pricing tests",
+          "capabilities": [
+            {
+              "id": "G2.04.a",
+              "name": "Packaging"
+            },
+            {
+              "id": "G2.04.b",
+              "name": "Value stack"
+            },
+            {
+              "id": "G2.04.c",
+              "name": "Guarantee"
+            },
+            {
+              "id": "G2.04.d",
+              "name": "Promotion"
+            },
+            {
+              "id": "G2.04.e",
+              "name": "Pricing within decision boundaries"
+            }
+          ]
+        },
+        {
+          "id": "G2.05",
+          "name": "Conversion and UX tests",
+          "capabilities": [
+            {
+              "id": "G2.05.a",
+              "name": "Landing pages"
+            },
+            {
+              "id": "G2.05.b",
+              "name": "Forms"
+            },
+            {
+              "id": "G2.05.c",
+              "name": "Checkout"
+            },
+            {
+              "id": "G2.05.d",
+              "name": "Sequences and nurturing"
+            },
+            {
+              "id": "G2.05.e",
+              "name": "Friction reduction"
+            }
+          ]
+        },
+        {
+          "id": "G2.06",
+          "name": "Channel optimization",
+          "capabilities": [
+            {
+              "id": "G2.06.a",
+              "name": "Targeting"
+            },
+            {
+              "id": "G2.06.b",
+              "name": "Bidding"
+            },
+            {
+              "id": "G2.06.c",
+              "name": "Tactical allocation"
+            },
+            {
+              "id": "G2.06.d",
+              "name": "Frequency and placement"
+            },
+            {
+              "id": "G2.06.e",
+              "name": "SEO improvement"
+            }
+          ]
+        },
+        {
+          "id": "G2.07",
+          "name": "Learning management",
+          "capabilities": [
+            {
+              "id": "G2.07.a",
+              "name": "Validity and bias"
+            },
+            {
+              "id": "G2.07.b",
+              "name": "Result analysis"
+            },
+            {
+              "id": "G2.07.c",
+              "name": "Ship iterate or stop"
+            },
+            {
+              "id": "G2.07.d",
+              "name": "Repository"
+            },
+            {
+              "id": "G2.07.e",
+              "name": "Transfer to domain owners"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G3",
+      "name": "Growth & Strategic Evolution",
+      "skill": "growth-strategy",
+      "processes": [
+        {
+          "id": "G3.01",
+          "name": "Strategic review",
+          "capabilities": [
+            {
+              "id": "G3.01.a",
+              "name": "Performance against objectives"
+            },
+            {
+              "id": "G3.01.b",
+              "name": "Invalidated assumptions"
+            },
+            {
+              "id": "G3.01.c",
+              "name": "Demand shifts"
+            },
+            {
+              "id": "G3.01.d",
+              "name": "Risks"
+            },
+            {
+              "id": "G3.01.e",
+              "name": "Revision decisions"
+            }
+          ]
+        },
+        {
+          "id": "G3.02",
+          "name": "Growth opportunity mapping",
+          "capabilities": [
+            {
+              "id": "G3.02.a",
+              "name": "Penetration"
+            },
+            {
+              "id": "G3.02.b",
+              "name": "New segments"
+            },
+            {
+              "id": "G3.02.c",
+              "name": "New markets"
+            },
+            {
+              "id": "G3.02.d",
+              "name": "New offers"
+            },
+            {
+              "id": "G3.02.e",
+              "name": "Partnerships and alternative models"
+            }
+          ]
+        },
+        {
+          "id": "G3.03",
+          "name": "Scaling readiness",
+          "capabilities": [
+            {
+              "id": "G3.03.a",
+              "name": "Unit economics"
+            },
+            {
+              "id": "G3.03.b",
+              "name": "Channel saturation"
+            },
+            {
+              "id": "G3.03.c",
+              "name": "Sales and delivery capacity"
+            },
+            {
+              "id": "G3.03.d",
+              "name": "Demand quality"
+            },
+            {
+              "id": "G3.03.e",
+              "name": "Growth pace risks"
+            }
+          ]
+        },
+        {
+          "id": "G3.04",
+          "name": "Resource reallocation",
+          "capabilities": [
+            {
+              "id": "G3.04.a",
+              "name": "Budget between channels"
+            },
+            {
+              "id": "G3.04.b",
+              "name": "People and vendors"
+            },
+            {
+              "id": "G3.04.c",
+              "name": "Initiative termination"
+            },
+            {
+              "id": "G3.04.d",
+              "name": "Reinvestment"
+            },
+            {
+              "id": "G3.04.e",
+              "name": "Scenarios"
+            }
+          ]
+        },
+        {
+          "id": "G3.05",
+          "name": "Product-marketing alignment",
+          "capabilities": [
+            {
+              "id": "G3.05.a",
+              "name": "Market feedback"
+            },
+            {
+              "id": "G3.05.b",
+              "name": "Product priorities"
+            },
+            {
+              "id": "G3.05.c",
+              "name": "New use cases"
+            },
+            {
+              "id": "G3.05.d",
+              "name": "Launch roadmap"
+            },
+            {
+              "id": "G3.05.e",
+              "name": "Promise revision"
+            }
+          ]
+        },
+        {
+          "id": "G3.06",
+          "name": "Innovation portfolio",
+          "capabilities": [
+            {
+              "id": "G3.06.a",
+              "name": "Exploratory bets"
+            },
+            {
+              "id": "G3.06.b",
+              "name": "New channels"
+            },
+            {
+              "id": "G3.06.c",
+              "name": "New capabilities and technologies"
+            },
+            {
+              "id": "G3.06.d",
+              "name": "Evaluation criteria"
+            },
+            {
+              "id": "G3.06.e",
+              "name": "Scale or stop"
+            }
+          ]
+        },
+        {
+          "id": "G3.07",
+          "name": "Operating model evolution",
+          "capabilities": [
+            {
+              "id": "G3.07.a",
+              "name": "New processes"
+            },
+            {
+              "id": "G3.07.b",
+              "name": "Roles and skills"
+            },
+            {
+              "id": "G3.07.c",
+              "name": "Automation"
+            },
+            {
+              "id": "G3.07.d",
+              "name": "Governance"
+            },
+            {
+              "id": "G3.07.e",
+              "name": "Map and OS updates"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

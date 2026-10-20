@@ -1,0 +1,61 @@
+{
+  "id": "lifecycle-program",
+  "name": "Lifecycle program design",
+  "steps": [
+    {
+      "id": "s1",
+      "agent": "memory-steward",
+      "depends_on": [],
+      "output": "Customer states, preferences and offer versions"
+    },
+    {
+      "id": "s2",
+      "agent": "journey-design-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Lifecycle state and trigger map"
+    },
+    {
+      "id": "s3",
+      "agent": "lifecycle-marketing-agent",
+      "depends_on": [
+        "s2"
+      ],
+      "output": "Program and contact rules"
+    },
+    {
+      "id": "s4",
+      "agent": "content-production-agent",
+      "depends_on": [
+        "s3"
+      ],
+      "output": "Lifecycle messages"
+    },
+    {
+      "id": "s5",
+      "agent": "performance-analysis-agent",
+      "depends_on": [
+        "s3"
+      ],
+      "output": "Measurement design"
+    },
+    {
+      "id": "s6",
+      "agent": "quality-reviewer",
+      "depends_on": [
+        "s4",
+        "s5"
+      ],
+      "output": "Program readiness review"
+    },
+    {
+      "id": "s7",
+      "agent": "memory-steward",
+      "depends_on": [
+        "s6"
+      ],
+      "output": "Program proposal and measurement records"
+    }
+  ]
+}

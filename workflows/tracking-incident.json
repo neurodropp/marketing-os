@@ -1,0 +1,52 @@
+{
+  "id": "tracking-incident",
+  "name": "Tracking incident",
+  "steps": [
+    {
+      "id": "s1",
+      "agent": "memory-steward",
+      "depends_on": [],
+      "output": "Measurement definitions and affected runs"
+    },
+    {
+      "id": "s2",
+      "agent": "performance-analysis-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Data validity diagnosis"
+    },
+    {
+      "id": "s3",
+      "agent": "marketing-planning-agent",
+      "depends_on": [
+        "s2"
+      ],
+      "output": "Tracking correction specification"
+    },
+    {
+      "id": "s4",
+      "agent": "performance-analysis-agent",
+      "depends_on": [
+        "s3"
+      ],
+      "output": "Validation plan and affected-data window"
+    },
+    {
+      "id": "s5",
+      "agent": "quality-reviewer",
+      "depends_on": [
+        "s4"
+      ],
+      "output": "Restoration evidence or explicit blocker"
+    },
+    {
+      "id": "s6",
+      "agent": "memory-steward",
+      "depends_on": [
+        "s5"
+      ],
+      "output": "Incident history and measurement changes"
+    }
+  ]
+}

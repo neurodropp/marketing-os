@@ -1,0 +1,53 @@
+{
+  "id": "performance-cycle",
+  "name": "Performance learning cycle",
+  "steps": [
+    {
+      "id": "s1",
+      "agent": "memory-steward",
+      "depends_on": [],
+      "output": "Metric definitions and active decisions"
+    },
+    {
+      "id": "s2",
+      "agent": "performance-analysis-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Analysis with uncertainty"
+    },
+    {
+      "id": "s3",
+      "agent": "experimentation-agent",
+      "depends_on": [
+        "s2"
+      ],
+      "output": "Prioritized experiments or test conclusions"
+    },
+    {
+      "id": "s4",
+      "agent": "growth-strategy-agent",
+      "depends_on": [
+        "s2",
+        "s3"
+      ],
+      "output": "Strategic options and affected objects"
+    },
+    {
+      "id": "s5",
+      "agent": "quality-reviewer",
+      "depends_on": [
+        "s4"
+      ],
+      "output": "Decision readiness review"
+    },
+    {
+      "id": "s6",
+      "agent": "memory-steward",
+      "depends_on": [
+        "s5"
+      ],
+      "output": "Evidence, learning and decision proposals"
+    }
+  ]
+}

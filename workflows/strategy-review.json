@@ -1,0 +1,69 @@
+{
+  "id": "strategy-review",
+  "name": "Strategic review",
+  "steps": [
+    {
+      "id": "s1",
+      "agent": "memory-steward",
+      "depends_on": [],
+      "output": "Approved strategy and decisions due for review"
+    },
+    {
+      "id": "s2",
+      "agent": "performance-analysis-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Results and uncertainty"
+    },
+    {
+      "id": "s3",
+      "agent": "customer-research-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Market change evidence"
+    },
+    {
+      "id": "s4",
+      "agent": "growth-strategy-agent",
+      "depends_on": [
+        "s2",
+        "s3"
+      ],
+      "output": "Options and trade-offs"
+    },
+    {
+      "id": "s5",
+      "agent": "business-strategy-agent",
+      "depends_on": [
+        "s4"
+      ],
+      "output": "Economic and capacity review"
+    },
+    {
+      "id": "s6",
+      "agent": "marketing-planning-agent",
+      "depends_on": [
+        "s5"
+      ],
+      "output": "Resource and roadmap proposal"
+    },
+    {
+      "id": "s7",
+      "agent": "quality-reviewer",
+      "depends_on": [
+        "s6"
+      ],
+      "output": "Decision readiness"
+    },
+    {
+      "id": "s8",
+      "agent": "memory-steward",
+      "depends_on": [
+        "s7"
+      ],
+      "output": "Proposed decisions and affected versions"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "retention-improvement",
+  "name": "Retention improvement",
+  "steps": [
+    {
+      "id": "s1",
+      "agent": "memory-steward",
+      "depends_on": [],
+      "output": "Lifecycle states and cohort data"
+    },
+    {
+      "id": "s2",
+      "agent": "performance-analysis-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Retention diagnosis"
+    },
+    {
+      "id": "s3",
+      "agent": "customer-research-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Customer friction and loss evidence"
+    },
+    {
+      "id": "s4",
+      "agent": "lifecycle-marketing-agent",
+      "depends_on": [
+        "s2",
+        "s3"
+      ],
+      "output": "Intervention proposal"
+    },
+    {
+      "id": "s5",
+      "agent": "experimentation-agent",
+      "depends_on": [
+        "s4"
+      ],
+      "output": "Evaluation design"
+    },
+    {
+      "id": "s6",
+      "agent": "quality-reviewer",
+      "depends_on": [
+        "s5"
+      ],
+      "output": "Retention intervention review"
+    },
+    {
+      "id": "s7",
+      "agent": "memory-steward",
+      "depends_on": [
+        "s6"
+      ],
+      "output": "Program and learning proposals"
+    }
+  ]
+}

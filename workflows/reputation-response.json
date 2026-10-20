@@ -1,0 +1,44 @@
+{
+  "id": "reputation-response",
+  "name": "Reputation response",
+  "steps": [
+    {
+      "id": "s1",
+      "agent": "memory-steward",
+      "depends_on": [],
+      "output": "Verified incident facts and brand context"
+    },
+    {
+      "id": "s2",
+      "agent": "community-management-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Issue classification and response proposal"
+    },
+    {
+      "id": "s3",
+      "agent": "brand-strategy-agent",
+      "depends_on": [
+        "s2"
+      ],
+      "output": "Brand consistency and escalation needs"
+    },
+    {
+      "id": "s4",
+      "agent": "quality-reviewer",
+      "depends_on": [
+        "s3"
+      ],
+      "output": "Response review and unresolved approvals"
+    },
+    {
+      "id": "s5",
+      "agent": "memory-steward",
+      "depends_on": [
+        "s4"
+      ],
+      "output": "Incident, decisions and follow-up"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "evergreen-content",
+  "name": "Evergreen content",
+  "steps": [
+    {
+      "id": "s1",
+      "agent": "memory-steward",
+      "depends_on": [],
+      "output": "Audience, brand and current evidence"
+    },
+    {
+      "id": "s2",
+      "agent": "creative-strategy-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Content brief and intent"
+    },
+    {
+      "id": "s3",
+      "agent": "content-production-agent",
+      "depends_on": [
+        "s2"
+      ],
+      "output": "Source-backed content"
+    },
+    {
+      "id": "s4",
+      "agent": "demand-generation-agent",
+      "depends_on": [
+        "s3"
+      ],
+      "output": "Distribution plan"
+    },
+    {
+      "id": "s5",
+      "agent": "quality-reviewer",
+      "depends_on": [
+        "s4"
+      ],
+      "output": "Content and distribution review"
+    },
+    {
+      "id": "s6",
+      "agent": "memory-steward",
+      "depends_on": [
+        "s5"
+      ],
+      "output": "Asset reference and review schedule"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "campaign-launch",
+  "name": "Campaign preparation and launch readiness",
+  "steps": [
+    {
+      "id": "s1",
+      "agent": "memory-steward",
+      "depends_on": [],
+      "output": "Approved strategy snapshot and gaps"
+    },
+    {
+      "id": "s2",
+      "agent": "creative-strategy-agent",
+      "depends_on": [
+        "s1"
+      ],
+      "output": "Campaign brief"
+    },
+    {
+      "id": "s3",
+      "agent": "content-production-agent",
+      "depends_on": [
+        "s2"
+      ],
+      "output": "Reviewable assets"
+    },
+    {
+      "id": "s4",
+      "agent": "conversion-enablement-agent",
+      "depends_on": [
+        "s2"
+      ],
+      "output": "Destination and routing specification"
+    },
+    {
+      "id": "s5",
+      "agent": "demand-generation-agent",
+      "depends_on": [
+        "s3",
+        "s4"
+      ],
+      "output": "Channel setup and launch readiness report"
+    },
+    {
+      "id": "s6",
+      "agent": "quality-reviewer",
+      "depends_on": [
+        "s5"
+      ],
+      "output": "Acceptance review; external actions remain permission-bound"
+    },
+    {
+      "id": "s7",
+      "agent": "memory-steward",
+      "depends_on": [
+        "s6"
+      ],
+      "output": "Campaign records and pending decisions"
+    }
+  ]
+}
