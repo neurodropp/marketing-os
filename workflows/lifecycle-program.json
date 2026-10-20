@@ -6,7 +6,8 @@
       "id": "s1",
       "agent": "memory-steward",
       "depends_on": [],
-      "output": "Customer states, preferences and offer versions"
+      "output": "Customer states, preferences and offer versions",
+      "process_ids": []
     },
     {
       "id": "s2",
@@ -14,7 +15,11 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Lifecycle state and trigger map"
+      "output": "Lifecycle state and trigger map",
+      "process_ids": [
+        "F6.05",
+        "F6.06"
+      ]
     },
     {
       "id": "s3",
@@ -22,7 +27,11 @@
       "depends_on": [
         "s2"
       ],
-      "output": "Program and contact rules"
+      "output": "Program and contact rules",
+      "process_ids": [
+        "O6.02",
+        "O6.07"
+      ]
     },
     {
       "id": "s4",
@@ -30,7 +39,10 @@
       "depends_on": [
         "s3"
       ],
-      "output": "Lifecycle messages"
+      "output": "Lifecycle messages",
+      "process_ids": [
+        "O2.04"
+      ]
     },
     {
       "id": "s5",
@@ -38,7 +50,10 @@
       "depends_on": [
         "s3"
       ],
-      "output": "Measurement design"
+      "output": "Measurement design",
+      "process_ids": [
+        "G1.01"
+      ]
     },
     {
       "id": "s6",
@@ -47,7 +62,8 @@
         "s4",
         "s5"
       ],
-      "output": "Program readiness review"
+      "output": "Program readiness review",
+      "process_ids": []
     },
     {
       "id": "s7",
@@ -55,7 +71,8 @@
       "depends_on": [
         "s6"
       ],
-      "output": "Program proposal and measurement records"
+      "output": "Program proposal and measurement records",
+      "process_ids": []
     }
   ]
 }

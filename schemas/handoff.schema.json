@@ -48,6 +48,14 @@
         "revise",
         "blocked"
       ]
+    },
+    "process_runs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true,
+      "description": "Required for mapped domain steps; exact process coverage is checked at runtime."
     }
   }
 }

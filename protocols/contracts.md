@@ -32,3 +32,7 @@ Return specific defects with evidence and a remedy. A self-review in one convers
 ## External actions
 
 Before an external action, verify a capable tool, target project/account, exact intended effect and user authorization within the host's rules. Report draft, prepared, attempted and confirmed states accurately. The reference CLI never sends, publishes, purchases, connects an account or calls a model.
+
+## Process-backed workflow handoffs (0.3.0)
+
+For a step with process_ids, include `process_runs`: an array of completed local process run IDs. Every mapped process must be represented exactly once and be ready or executed. Draft, stale or modified evidence is refused. Control steps have no required process runs. Read process-execution.md for input bindings, completion payloads and evidence requirements.

@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.3.0 — Complete operational SOP library
+
+- Implement all 108 English SOPs with concrete inputs, five capability-specific steps, output contracts, three process-specific gates, stop/recovery rules and handoffs; preserve all 540 capability IDs.
+- Revise all 19 agent profiles and 19 skills with precise routing, ownership boundaries, selective context loading, evidence review and persistence rules.
+- Add a canonical process catalog, readable index, deterministic renderer and CI drift checks.
+- Add process-list/show/start/finish/status, pinned input/context evidence, artifact hashes and draft/ready/executed states.
+- Bind all ten workflows to required process runs; reject missing, stale, modified or draft process evidence.
+- Add 15 tests (50 total), including a 108-process contract round trip, and four reproducible authored reference cases. Define 95 target-host behavioral cases without claiming they have all run.
+- Document current primary engineering/domain sources and remaining live-integration limits.
+
+### Compatibility
+
+Taxonomy, memory IDs and schemas are preserved. New workflow runs require process_runs on mapped domain handoffs. Previous source definitions remain pinned in existing workspaces; moving to this release requires explicit reconciliation and replacement of affected runs, not silent repointing. No private workspace is automatically upgraded or overwritten.
+
 ## 0.2.0 — Folder workspaces and guided onboarding
 
 - Add standalone brand folders with a private, relocatable framework snapshot.

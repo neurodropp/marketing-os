@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "release": "0.2.0",
+  "release": "0.3.0",
   "agents": [
     {
       "id": "business-strategy-agent",
@@ -158,11 +158,11 @@
   "skills": [
     {
       "id": "business-strategy",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/business-strategy/SKILL.md",
       "agent": "business-strategy-agent",
       "domain": "F1",
-      "description": "Work on business & commercial strategy when the requested deliverable concerns business model,unit economics,business plan,commercial strategy.",
+      "description": "Model business priorities, revenue architecture, unit economics and commercial constraints before marketing allocation decisions.",
       "keywords": [
         "business model",
         "unit economics",
@@ -170,16 +170,23 @@
         "commercial strategy"
       ],
       "references": [
-        "skills/business-strategy/references/domain.md"
+        "skills/business-strategy/references/domain.md",
+        "skills/business-strategy/references/processes.md",
+        "skills/business-strategy/references/processes/F1.01.md",
+        "skills/business-strategy/references/processes/F1.02.md",
+        "skills/business-strategy/references/processes/F1.03.md",
+        "skills/business-strategy/references/processes/F1.04.md",
+        "skills/business-strategy/references/processes/F1.05.md",
+        "skills/business-strategy/references/processes/F1.06.md"
       ]
     },
     {
       "id": "customer-research",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/customer-research/SKILL.md",
       "agent": "customer-research-agent",
       "domain": "F2",
-      "description": "Work on customer & market intelligence when the requested deliverable concerns customer research,market research,icp,personas,jtbd,pains,gains,competitors.",
+      "description": "Research markets, segments, buying units, customer jobs and alternatives; synthesize traceable evidence for decisions.",
       "keywords": [
         "customer research",
         "market research",
@@ -191,16 +198,24 @@
         "competitors"
       ],
       "references": [
-        "skills/customer-research/references/domain.md"
+        "skills/customer-research/references/domain.md",
+        "skills/customer-research/references/processes.md",
+        "skills/customer-research/references/processes/F2.01.md",
+        "skills/customer-research/references/processes/F2.02.md",
+        "skills/customer-research/references/processes/F2.03.md",
+        "skills/customer-research/references/processes/F2.04.md",
+        "skills/customer-research/references/processes/F2.05.md",
+        "skills/customer-research/references/processes/F2.06.md",
+        "skills/customer-research/references/processes/F2.07.md"
       ]
     },
     {
       "id": "brand-strategy",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/brand-strategy/SKILL.md",
       "agent": "brand-strategy-agent",
       "domain": "F3",
-      "description": "Work on brand strategy & identity when the requested deliverable concerns brand identity,tone of voice,mission,vision,values,brand architecture.",
+      "description": "Define and govern brand foundations, architecture, verbal and visual identity, experience and reputation measurement.",
       "keywords": [
         "brand identity",
         "tone of voice",
@@ -210,16 +225,24 @@
         "brand architecture"
       ],
       "references": [
-        "skills/brand-strategy/references/domain.md"
+        "skills/brand-strategy/references/domain.md",
+        "skills/brand-strategy/references/processes.md",
+        "skills/brand-strategy/references/processes/F3.01.md",
+        "skills/brand-strategy/references/processes/F3.02.md",
+        "skills/brand-strategy/references/processes/F3.03.md",
+        "skills/brand-strategy/references/processes/F3.04.md",
+        "skills/brand-strategy/references/processes/F3.05.md",
+        "skills/brand-strategy/references/processes/F3.06.md",
+        "skills/brand-strategy/references/processes/F3.07.md"
       ]
     },
     {
       "id": "positioning",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/positioning/SKILL.md",
       "agent": "positioning-agent",
       "domain": "F4",
-      "description": "Work on positioning & value proposition when the requested deliverable concerns positioning,usp,uvp,value proposition,differentiation.",
+      "description": "Choose and validate category, audience priority, differentiation, value proposition and core claims.",
       "keywords": [
         "positioning",
         "usp",
@@ -228,16 +251,23 @@
         "differentiation"
       ],
       "references": [
-        "skills/positioning/references/domain.md"
+        "skills/positioning/references/domain.md",
+        "skills/positioning/references/processes.md",
+        "skills/positioning/references/processes/F4.01.md",
+        "skills/positioning/references/processes/F4.02.md",
+        "skills/positioning/references/processes/F4.03.md",
+        "skills/positioning/references/processes/F4.04.md",
+        "skills/positioning/references/processes/F4.05.md",
+        "skills/positioning/references/processes/F4.06.md"
       ]
     },
     {
       "id": "offer-design",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/offer-design/SKILL.md",
       "agent": "offer-design-agent",
       "domain": "F5",
-      "description": "Work on offer & monetization strategy when the requested deliverable concerns offer,pricing,monetization,upsell,downsell,cross-sell,bundle.",
+      "description": "Design offers, portfolio structure, value stacks, pricing, lifecycle monetization and offer launches.",
       "keywords": [
         "offer",
         "pricing",
@@ -248,16 +278,24 @@
         "bundle"
       ],
       "references": [
-        "skills/offer-design/references/domain.md"
+        "skills/offer-design/references/domain.md",
+        "skills/offer-design/references/processes.md",
+        "skills/offer-design/references/processes/F5.01.md",
+        "skills/offer-design/references/processes/F5.02.md",
+        "skills/offer-design/references/processes/F5.03.md",
+        "skills/offer-design/references/processes/F5.04.md",
+        "skills/offer-design/references/processes/F5.05.md",
+        "skills/offer-design/references/processes/F5.06.md",
+        "skills/offer-design/references/processes/F5.07.md"
       ]
     },
     {
       "id": "journey-design",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/journey-design/SKILL.md",
       "agent": "journey-design-agent",
       "domain": "F6",
-      "description": "Work on customer journey & funnel architecture when the requested deliverable concerns customer journey,funnel architecture,touchpoints,journey mapping.",
+      "description": "Design journeys, touchpoints, funnels, lead handoffs, lifecycle states and CRM trigger logic.",
       "keywords": [
         "customer journey",
         "funnel architecture",
@@ -265,16 +303,24 @@
         "journey mapping"
       ],
       "references": [
-        "skills/journey-design/references/domain.md"
+        "skills/journey-design/references/domain.md",
+        "skills/journey-design/references/processes.md",
+        "skills/journey-design/references/processes/F6.01.md",
+        "skills/journey-design/references/processes/F6.02.md",
+        "skills/journey-design/references/processes/F6.03.md",
+        "skills/journey-design/references/processes/F6.04.md",
+        "skills/journey-design/references/processes/F6.05.md",
+        "skills/journey-design/references/processes/F6.06.md",
+        "skills/journey-design/references/processes/F6.07.md"
       ]
     },
     {
       "id": "marketing-planning",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/marketing-planning/SKILL.md",
       "agent": "marketing-planning-agent",
       "domain": "F7",
-      "description": "Work on marketing infrastructure & planning when the requested deliverable concerns marketing plan,budget,tracking,martech,infrastructure,roadmap.",
+      "description": "Plan marketing resources, technology, tracking, operations, decision rights and cross-team handoffs.",
       "keywords": [
         "marketing plan",
         "budget",
@@ -284,16 +330,24 @@
         "roadmap"
       ],
       "references": [
-        "skills/marketing-planning/references/domain.md"
+        "skills/marketing-planning/references/domain.md",
+        "skills/marketing-planning/references/processes.md",
+        "skills/marketing-planning/references/processes/F7.01.md",
+        "skills/marketing-planning/references/processes/F7.02.md",
+        "skills/marketing-planning/references/processes/F7.03.md",
+        "skills/marketing-planning/references/processes/F7.04.md",
+        "skills/marketing-planning/references/processes/F7.05.md",
+        "skills/marketing-planning/references/processes/F7.06.md",
+        "skills/marketing-planning/references/processes/F7.07.md"
       ]
     },
     {
       "id": "creative-strategy",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/creative-strategy/SKILL.md",
       "agent": "creative-strategy-agent",
       "domain": "O1",
-      "description": "Work on messaging & creative strategy when the requested deliverable concerns creative strategy,angles,hooks,messaging,content pillars,campaign brief.",
+      "description": "Develop message architecture, creative concepts, campaign briefs, content strategy and a creative learning agenda.",
       "keywords": [
         "creative strategy",
         "angles",
@@ -303,16 +357,23 @@
         "campaign brief"
       ],
       "references": [
-        "skills/creative-strategy/references/domain.md"
+        "skills/creative-strategy/references/domain.md",
+        "skills/creative-strategy/references/processes.md",
+        "skills/creative-strategy/references/processes/O1.01.md",
+        "skills/creative-strategy/references/processes/O1.02.md",
+        "skills/creative-strategy/references/processes/O1.03.md",
+        "skills/creative-strategy/references/processes/O1.04.md",
+        "skills/creative-strategy/references/processes/O1.05.md",
+        "skills/creative-strategy/references/processes/O1.06.md"
       ]
     },
     {
       "id": "content-production",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/content-production/SKILL.md",
       "agent": "content-production-agent",
       "domain": "O2",
-      "description": "Work on copywriting & content production when the requested deliverable concerns copywriting,content production,aida,pas,bab,headline,script,email copy.",
+      "description": "Produce and adapt editorial, conversion copy, multimedia, channel assets and search-focused content from an accepted brief.",
       "keywords": [
         "copywriting",
         "content production",
@@ -324,16 +385,24 @@
         "email copy"
       ],
       "references": [
-        "skills/content-production/references/domain.md"
+        "skills/content-production/references/domain.md",
+        "skills/content-production/references/processes.md",
+        "skills/content-production/references/processes/O2.01.md",
+        "skills/content-production/references/processes/O2.02.md",
+        "skills/content-production/references/processes/O2.03.md",
+        "skills/content-production/references/processes/O2.04.md",
+        "skills/content-production/references/processes/O2.05.md",
+        "skills/content-production/references/processes/O2.06.md",
+        "skills/content-production/references/processes/O2.07.md"
       ]
     },
     {
       "id": "demand-generation",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/demand-generation/SKILL.md",
       "agent": "demand-generation-agent",
       "domain": "O3",
-      "description": "Work on traffic & demand generation when the requested deliverable concerns acquisition,paid social,paid search,seo,traffic,demand generation,media buying.",
+      "description": "Plan and operate search, paid social, organic distribution, partnerships, PR and channel coordination within authorized scope.",
       "keywords": [
         "acquisition",
         "paid social",
@@ -345,16 +414,24 @@
       ],
       "references": [
         "skills/demand-generation/references/domain.md",
-        "skills/demand-generation/references/paid-social.md"
+        "skills/demand-generation/references/paid-social.md",
+        "skills/demand-generation/references/processes.md",
+        "skills/demand-generation/references/processes/O3.01.md",
+        "skills/demand-generation/references/processes/O3.02.md",
+        "skills/demand-generation/references/processes/O3.03.md",
+        "skills/demand-generation/references/processes/O3.04.md",
+        "skills/demand-generation/references/processes/O3.05.md",
+        "skills/demand-generation/references/processes/O3.06.md",
+        "skills/demand-generation/references/processes/O3.07.md"
       ]
     },
     {
       "id": "conversion-enablement",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/conversion-enablement/SKILL.md",
       "agent": "conversion-enablement-agent",
       "domain": "O4",
-      "description": "Work on conversion & sales enablement when the requested deliverable concerns conversion,sales enablement,lead qualification,landing page,checkout,nurture.",
+      "description": "Improve conversion surfaces, capture, qualification, nurture, commerce paths and sales enablement.",
       "keywords": [
         "conversion",
         "sales enablement",
@@ -364,16 +441,24 @@
         "nurture"
       ],
       "references": [
-        "skills/conversion-enablement/references/domain.md"
+        "skills/conversion-enablement/references/domain.md",
+        "skills/conversion-enablement/references/processes.md",
+        "skills/conversion-enablement/references/processes/O4.01.md",
+        "skills/conversion-enablement/references/processes/O4.02.md",
+        "skills/conversion-enablement/references/processes/O4.03.md",
+        "skills/conversion-enablement/references/processes/O4.04.md",
+        "skills/conversion-enablement/references/processes/O4.05.md",
+        "skills/conversion-enablement/references/processes/O4.06.md",
+        "skills/conversion-enablement/references/processes/O4.07.md"
       ]
     },
     {
       "id": "community-management",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/community-management/SKILL.md",
       "agent": "community-management-agent",
       "domain": "O5",
-      "description": "Work on community & relationship management when the requested deliverable concerns community,moderation,reputation,social listening,customer conversation.",
+      "description": "Manage community, engagement, listening, reputation response, customer dialogue and relationship advocacy.",
       "keywords": [
         "community",
         "moderation",
@@ -382,16 +467,23 @@
         "customer conversation"
       ],
       "references": [
-        "skills/community-management/references/domain.md"
+        "skills/community-management/references/domain.md",
+        "skills/community-management/references/processes.md",
+        "skills/community-management/references/processes/O5.01.md",
+        "skills/community-management/references/processes/O5.02.md",
+        "skills/community-management/references/processes/O5.03.md",
+        "skills/community-management/references/processes/O5.04.md",
+        "skills/community-management/references/processes/O5.05.md",
+        "skills/community-management/references/processes/O5.06.md"
       ]
     },
     {
       "id": "lifecycle-marketing",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/lifecycle-marketing/SKILL.md",
       "agent": "lifecycle-marketing-agent",
       "domain": "O6",
-      "description": "Work on customer lifecycle & monetization when the requested deliverable concerns retention,lifecycle,onboarding,win-back,loyalty,renewal,churn.",
+      "description": "Design and operate onboarding, lifecycle messages, retention, expansion, win-back and customer advocacy programs.",
       "keywords": [
         "retention",
         "lifecycle",
@@ -402,16 +494,24 @@
         "churn"
       ],
       "references": [
-        "skills/lifecycle-marketing/references/domain.md"
+        "skills/lifecycle-marketing/references/domain.md",
+        "skills/lifecycle-marketing/references/processes.md",
+        "skills/lifecycle-marketing/references/processes/O6.01.md",
+        "skills/lifecycle-marketing/references/processes/O6.02.md",
+        "skills/lifecycle-marketing/references/processes/O6.03.md",
+        "skills/lifecycle-marketing/references/processes/O6.04.md",
+        "skills/lifecycle-marketing/references/processes/O6.05.md",
+        "skills/lifecycle-marketing/references/processes/O6.06.md",
+        "skills/lifecycle-marketing/references/processes/O6.07.md"
       ]
     },
     {
       "id": "performance-analysis",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/performance-analysis/SKILL.md",
       "agent": "performance-analysis-agent",
       "domain": "G1",
-      "description": "Work on analytics & performance intelligence when the requested deliverable concerns analytics,reporting,attribution,cac,ltv,performance analysis,dashboard.",
+      "description": "Define measurement, validate data, analyze funnels, channels and customer economics, and assess attribution or causal evidence.",
       "keywords": [
         "analytics",
         "reporting",
@@ -422,16 +522,24 @@
         "dashboard"
       ],
       "references": [
-        "skills/performance-analysis/references/domain.md"
+        "skills/performance-analysis/references/domain.md",
+        "skills/performance-analysis/references/processes.md",
+        "skills/performance-analysis/references/processes/G1.01.md",
+        "skills/performance-analysis/references/processes/G1.02.md",
+        "skills/performance-analysis/references/processes/G1.03.md",
+        "skills/performance-analysis/references/processes/G1.04.md",
+        "skills/performance-analysis/references/processes/G1.05.md",
+        "skills/performance-analysis/references/processes/G1.06.md",
+        "skills/performance-analysis/references/processes/G1.07.md"
       ]
     },
     {
       "id": "experimentation",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/experimentation/SKILL.md",
       "agent": "experimentation-agent",
       "domain": "G2",
-      "description": "Work on experimentation & optimization when the requested deliverable concerns experiment,a/b test,cro,optimization,test design,creative test.",
+      "description": "Prioritize opportunities, design and analyze experiments, and optimize creative, offers, conversion and channels.",
       "keywords": [
         "experiment",
         "a/b test",
@@ -441,16 +549,24 @@
         "creative test"
       ],
       "references": [
-        "skills/experimentation/references/domain.md"
+        "skills/experimentation/references/domain.md",
+        "skills/experimentation/references/processes.md",
+        "skills/experimentation/references/processes/G2.01.md",
+        "skills/experimentation/references/processes/G2.02.md",
+        "skills/experimentation/references/processes/G2.03.md",
+        "skills/experimentation/references/processes/G2.04.md",
+        "skills/experimentation/references/processes/G2.05.md",
+        "skills/experimentation/references/processes/G2.06.md",
+        "skills/experimentation/references/processes/G2.07.md"
       ]
     },
     {
       "id": "growth-strategy",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/growth-strategy/SKILL.md",
       "agent": "growth-strategy-agent",
       "domain": "G3",
-      "description": "Work on growth & strategic evolution when the requested deliverable concerns growth strategy,scaling,strategic review,resource allocation,new market.",
+      "description": "Review strategy, assess growth options and scaling readiness, reallocate resources and evolve the operating model.",
       "keywords": [
         "growth strategy",
         "scaling",
@@ -459,12 +575,20 @@
         "new market"
       ],
       "references": [
-        "skills/growth-strategy/references/domain.md"
+        "skills/growth-strategy/references/domain.md",
+        "skills/growth-strategy/references/processes.md",
+        "skills/growth-strategy/references/processes/G3.01.md",
+        "skills/growth-strategy/references/processes/G3.02.md",
+        "skills/growth-strategy/references/processes/G3.03.md",
+        "skills/growth-strategy/references/processes/G3.04.md",
+        "skills/growth-strategy/references/processes/G3.05.md",
+        "skills/growth-strategy/references/processes/G3.06.md",
+        "skills/growth-strategy/references/processes/G3.07.md"
       ]
     },
     {
       "id": "marketing-orchestrate",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/marketing-orchestrate/SKILL.md",
       "agent": "orchestrator",
       "domain": null,
@@ -474,7 +598,7 @@
     },
     {
       "id": "project-memory",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/project-memory/SKILL.md",
       "agent": "memory-steward",
       "domain": null,
@@ -484,7 +608,7 @@
     },
     {
       "id": "marketing-review",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "path": "skills/marketing-review/SKILL.md",
       "agent": "quality-reviewer",
       "domain": null,
@@ -534,5 +658,6 @@
       "id": "strategy-review",
       "path": "workflows/strategy-review.json"
     }
-  ]
+  ],
+  "process_catalog": "catalog/processes.json"
 }

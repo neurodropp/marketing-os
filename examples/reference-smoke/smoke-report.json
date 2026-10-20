@@ -1,0 +1,39 @@
+{
+  "type": "authored-reference-smoke",
+  "synthetic": true,
+  "independent_model_evaluation": false,
+  "checks": [
+    "CAC 140",
+    "three-month contribution 189 per initial customer",
+    "payback observed at month 3",
+    "downside contribution 162 below CAC 180",
+    "missing research/account/experiment data stays draft"
+  ],
+  "runs": [
+    {
+      "process": "F1.03",
+      "run": "economics",
+      "status": "ready",
+      "artifact": "strategy/economics/result.md"
+    },
+    {
+      "process": "F2.04",
+      "run": "research",
+      "status": "draft",
+      "artifact": "research/research/result.md"
+    },
+    {
+      "process": "O3.03",
+      "run": "paid-social",
+      "status": "draft",
+      "artifact": "campaigns/paid-social/result.md"
+    },
+    {
+      "process": "G2.02",
+      "run": "experiment",
+      "status": "draft",
+      "artifact": "reports/experiment/result.md"
+    }
+  ],
+  "external_actions": []
+}

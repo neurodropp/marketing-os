@@ -6,7 +6,8 @@
       "id": "s1",
       "agent": "memory-steward",
       "depends_on": [],
-      "output": "Approved strategy and decisions due for review"
+      "output": "Approved strategy and decisions due for review",
+      "process_ids": []
     },
     {
       "id": "s2",
@@ -14,7 +15,10 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Results and uncertainty"
+      "output": "Results and uncertainty",
+      "process_ids": [
+        "G1.07"
+      ]
     },
     {
       "id": "s3",
@@ -22,7 +26,11 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Market change evidence"
+      "output": "Market change evidence",
+      "process_ids": [
+        "F2.01",
+        "F2.06"
+      ]
     },
     {
       "id": "s4",
@@ -31,7 +39,11 @@
         "s2",
         "s3"
       ],
-      "output": "Options and trade-offs"
+      "output": "Options and trade-offs",
+      "process_ids": [
+        "G3.01",
+        "G3.02"
+      ]
     },
     {
       "id": "s5",
@@ -39,7 +51,11 @@
       "depends_on": [
         "s4"
       ],
-      "output": "Economic and capacity review"
+      "output": "Economic and capacity review",
+      "process_ids": [
+        "F1.02",
+        "F1.03"
+      ]
     },
     {
       "id": "s6",
@@ -47,7 +63,11 @@
       "depends_on": [
         "s5"
       ],
-      "output": "Resource and roadmap proposal"
+      "output": "Resource and roadmap proposal",
+      "process_ids": [
+        "F7.01",
+        "F7.02"
+      ]
     },
     {
       "id": "s7",
@@ -55,7 +75,8 @@
       "depends_on": [
         "s6"
       ],
-      "output": "Decision readiness"
+      "output": "Decision readiness",
+      "process_ids": []
     },
     {
       "id": "s8",
@@ -63,7 +84,8 @@
       "depends_on": [
         "s7"
       ],
-      "output": "Proposed decisions and affected versions"
+      "output": "Proposed decisions and affected versions",
+      "process_ids": []
     }
   ]
 }

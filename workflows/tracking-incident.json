@@ -6,7 +6,8 @@
       "id": "s1",
       "agent": "memory-steward",
       "depends_on": [],
-      "output": "Measurement definitions and affected runs"
+      "output": "Measurement definitions and affected runs",
+      "process_ids": []
     },
     {
       "id": "s2",
@@ -14,7 +15,10 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Data validity diagnosis"
+      "output": "Data validity diagnosis",
+      "process_ids": [
+        "G1.02"
+      ]
     },
     {
       "id": "s3",
@@ -22,7 +26,10 @@
       "depends_on": [
         "s2"
       ],
-      "output": "Tracking correction specification"
+      "output": "Tracking correction specification",
+      "process_ids": [
+        "F7.04"
+      ]
     },
     {
       "id": "s4",
@@ -30,7 +37,10 @@
       "depends_on": [
         "s3"
       ],
-      "output": "Validation plan and affected-data window"
+      "output": "Validation plan and affected-data window",
+      "process_ids": [
+        "G1.02"
+      ]
     },
     {
       "id": "s5",
@@ -38,7 +48,8 @@
       "depends_on": [
         "s4"
       ],
-      "output": "Restoration evidence or explicit blocker"
+      "output": "Restoration evidence or explicit blocker",
+      "process_ids": []
     },
     {
       "id": "s6",
@@ -46,7 +57,8 @@
       "depends_on": [
         "s5"
       ],
-      "output": "Incident history and measurement changes"
+      "output": "Incident history and measurement changes",
+      "process_ids": []
     }
   ]
 }

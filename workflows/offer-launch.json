@@ -6,7 +6,8 @@
       "id": "s1",
       "agent": "memory-steward",
       "depends_on": [],
-      "output": "Current strategy and customer evidence"
+      "output": "Current strategy and customer evidence",
+      "process_ids": []
     },
     {
       "id": "s2",
@@ -14,7 +15,11 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Scoped offer and commercial assumptions"
+      "output": "Scoped offer and commercial assumptions",
+      "process_ids": [
+        "F5.01",
+        "F5.06"
+      ]
     },
     {
       "id": "s3",
@@ -22,7 +27,11 @@
       "depends_on": [
         "s2"
       ],
-      "output": "Offer promise and evidence"
+      "output": "Offer promise and evidence",
+      "process_ids": [
+        "F4.04",
+        "F4.05"
+      ]
     },
     {
       "id": "s4",
@@ -30,7 +39,10 @@
       "depends_on": [
         "s3"
       ],
-      "output": "Conversion path"
+      "output": "Conversion path",
+      "process_ids": [
+        "F6.03"
+      ]
     },
     {
       "id": "s5",
@@ -38,7 +50,10 @@
       "depends_on": [
         "s4"
       ],
-      "output": "Launch brief"
+      "output": "Launch brief",
+      "process_ids": [
+        "O1.04"
+      ]
     },
     {
       "id": "s6",
@@ -46,7 +61,11 @@
       "depends_on": [
         "s5"
       ],
-      "output": "Resources and launch dependencies"
+      "output": "Resources and launch dependencies",
+      "process_ids": [
+        "F7.02",
+        "F7.05"
+      ]
     },
     {
       "id": "s7",
@@ -54,7 +73,8 @@
       "depends_on": [
         "s6"
       ],
-      "output": "Readiness review"
+      "output": "Readiness review",
+      "process_ids": []
     },
     {
       "id": "s8",
@@ -62,7 +82,8 @@
       "depends_on": [
         "s7"
       ],
-      "output": "Offer and decision proposals"
+      "output": "Offer and decision proposals",
+      "process_ids": []
     }
   ]
 }

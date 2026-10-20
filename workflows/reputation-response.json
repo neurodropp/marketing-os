@@ -6,7 +6,8 @@
       "id": "s1",
       "agent": "memory-steward",
       "depends_on": [],
-      "output": "Verified incident facts and brand context"
+      "output": "Verified incident facts and brand context",
+      "process_ids": []
     },
     {
       "id": "s2",
@@ -14,7 +15,10 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Issue classification and response proposal"
+      "output": "Issue classification and response proposal",
+      "process_ids": [
+        "O5.04"
+      ]
     },
     {
       "id": "s3",
@@ -22,7 +26,10 @@
       "depends_on": [
         "s2"
       ],
-      "output": "Brand consistency and escalation needs"
+      "output": "Brand consistency and escalation needs",
+      "process_ids": [
+        "F3.07"
+      ]
     },
     {
       "id": "s4",
@@ -30,7 +37,8 @@
       "depends_on": [
         "s3"
       ],
-      "output": "Response review and unresolved approvals"
+      "output": "Response review and unresolved approvals",
+      "process_ids": []
     },
     {
       "id": "s5",
@@ -38,7 +46,8 @@
       "depends_on": [
         "s4"
       ],
-      "output": "Incident, decisions and follow-up"
+      "output": "Incident, decisions and follow-up",
+      "process_ids": []
     }
   ]
 }

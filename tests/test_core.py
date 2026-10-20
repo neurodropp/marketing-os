@@ -6,6 +6,7 @@ import tempfile
 import unittest
 
 from mos import core as c
+from mos import processes
 
 
 class ProjectTests(unittest.TestCase):
@@ -27,6 +28,30 @@ class ProjectTests(unittest.TestCase):
         return {"project_id": "demo-brand", "step_id": step, "execution_mode": "role-pass",
                 "deliverable": "Synthetic result", "sources": ["Test fixture"], "assumptions": [],
                 "acceptance": "Fixture contract checked", "memory_proposals": [], **changes}
+
+    def completed_processes(self, step):
+        """Synthetic state-machine fixtures, not marketing-quality evaluations."""
+        ids = []
+        source = self.project / "fixture.md"
+        source.write_text("Synthetic inputs and observed review evidence for state tests.")
+        for n, pid in enumerate(step.get("process_ids", [])):
+            spec = processes.show(pid)
+            rid = f"{step['id']}-process-{n}"
+            inputs = {i["id"]: {"status": "provided", "references": ["fixture.md"], "note": "Synthetic fixture"}
+                      for i in spec["inputs"]}
+            run = processes.start(self.project, pid, rid, "Synthetic state-machine fixture",
+                                  {"project_id": "demo-brand", "inputs": inputs})
+            artifact = f"{spec['output_folder']}/{rid}.md"
+            (self.project / spec["output_folder"]).mkdir(exist_ok=True)
+            (self.project / artifact).write_text("Synthetic deliverable; not a marketing-quality evaluation.")
+            payload = run["completion_template"]
+            payload.update(status="ready", artifacts=[artifact], next_action="Fixture complete",
+                           review={"reviewer": "Test fixture", "mode": "role-pass", "summary": "State validation only"})
+            for q in payload["checks"]:
+                q.update(verdict="pass", evidence=["fixture.md"], note="Synthetic gate declaration")
+            processes.finish(self.project, rid, payload)
+            ids.append(rid)
+        return ids
 
     def test_initialize_never_overwrites_existing_workspace(self):
         before = (self.project / "project.json").read_bytes()
@@ -193,6 +218,7 @@ class ProjectTests(unittest.TestCase):
         run = c.create_run(self.project, "campaign-launch", "campaign", "Synthetic campaign")
         for step in run["steps"]:
             h = self.handoff(step["id"])
+            h["process_runs"] = self.completed_processes(step)
             if step["agent"] == "quality-reviewer":
                 h["verdict"] = "pass"
             result = c.complete_step(self.project, "campaign", step["id"], h)
@@ -203,6 +229,7 @@ class ProjectTests(unittest.TestCase):
         run = c.create_run(self.project, "campaign-launch", "campaign", "Synthetic campaign")
         for step in run["steps"]:
             h = self.handoff(step["id"])
+            h["process_runs"] = self.completed_processes(step)
             if step["agent"] == "quality-reviewer":
                 h["verdict"] = "revise"
                 result = c.complete_step(self.project, "campaign", step["id"], h)
@@ -224,6 +251,30 @@ class RegistryTests(unittest.TestCase):
         result = c.validate_repo(self.root)
         self.assertEqual(result["domains"], 16)
         self.assertGreaterEqual(result["skills"], result["domains"])
+
+    def test_missing_operational_process_is_rejected(self):
+        path = self.root / "catalog/processes.json"
+        data = c.read(path)
+        data["processes"].pop()
+        c.save(path, data)
+        with self.assertRaises(c.Invalid):
+            c.validate_repo(self.root)
+
+    def test_wrong_capability_mapping_is_rejected(self):
+        path = self.root / "catalog/processes.json"
+        data = c.read(path)
+        data["processes"][0]["steps"][0]["capability"] = "F2.01.a"
+        c.save(path, data)
+        with self.assertRaises(c.Invalid):
+            c.validate_repo(self.root)
+
+    def test_missing_workflow_process_mapping_is_rejected(self):
+        path = self.root / "workflows/campaign-launch.json"
+        data = c.read(path)
+        data["steps"][1]["process_ids"] = []
+        c.save(path, data)
+        with self.assertRaises(c.Invalid):
+            c.validate_repo(self.root)
 
     def test_cycle_is_rejected(self):
         path = self.root / "workflows/campaign-launch.json"

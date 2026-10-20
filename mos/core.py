@@ -257,6 +257,8 @@ def validate_repo(root=ROOT):
             require(safe(root, ref).is_file(), f"Missing skill reference {ref}")
     for a in agents.values():
         require(all(s in skills for s in a["skills"]), "Unknown skill in agent")
+    from .processes import validate_catalog
+    process_specs = validate_catalog(root, reg, taxonomy)
     workflow_ids = set()
     for entry in reg["workflows"]:
         identifier(entry["id"])
@@ -271,6 +273,14 @@ def validate_repo(root=ROOT):
             identifier(s["id"])
             require(s["agent"] in agents, "Unknown workflow agent")
             require(set(s["depends_on"]) <= set(steps), "Unknown dependency")
+            process_ids = s.get("process_ids", [])
+            require(isinstance(process_ids, list) and len(process_ids) == len(set(process_ids)),
+                    "Workflow process IDs must be a unique array")
+            if agents[s["agent"]].get("domain") is not None:
+                require(bool(process_ids), "Domain workflow step must map to operational processes")
+            for pid in process_ids:
+                require(pid in process_specs and process_specs[pid]["agent"] == s["agent"],
+                        "Workflow process ownership mismatch")
         while pending:
             ready = {i for i in pending if set(steps[i]["depends_on"]) <= done}
             require(bool(ready), "Workflow contains a dependency cycle")
@@ -279,7 +289,7 @@ def validate_repo(root=ROOT):
     return {"agents": len(agents), "skills": len(skills), "domains": len(domains),
             "processes": sum(len(d["processes"]) for d in taxonomy["domains"]),
             "capabilities": sum(len(p["capabilities"]) for d in taxonomy["domains"] for p in d["processes"]),
-            "workflows": len(workflow_ids)}
+            "workflows": len(workflow_ids), "operational_sops": len(process_specs)}
 
 
 def workflow_context(workflow_id, root=ROOT):
@@ -302,7 +312,8 @@ def create_run(project, workflow_id, run_id, objective, root=ROOT):
     reg, w, agents, skills = workflow_context(workflow_id, root)
     paths = [a["path"] for a in agents] + [s["path"] for s in skills] + [p for s in skills for p in s["references"]]
     paths += [next(e["path"] for e in reg["workflows"] if e["id"] == workflow_id)]
-    paths += ["protocols/orchestration.md", "protocols/second-brain.md", "protocols/contracts.md"]
+    paths += ["protocols/orchestration.md", "protocols/second-brain.md", "protocols/contracts.md",
+              "protocols/process-execution.md"]
     run = {"schema_version": "1.0", "project_id": cfg["project_id"], "id": run_id,
            "objective": objective, "workflow_id": workflow_id, "release": reg["release"],
            "created_at": now(), "status": "in-progress", "events": [],
@@ -335,6 +346,11 @@ def complete_step(project, run_id, step_id, handoff, root=ROOT):
         require(step["status"] == "pending", "Step is already resolved; use a new run for revision")
         done = {s["id"] for s in run["steps"] if s["status"] == "done"}
         require(set(step["depends_on"]) <= done, "Dependencies have not completed")
+        from . import processes
+        for prior in run["steps"]:
+            if prior["status"] == "done":
+                for linked_id in prior["handoff"].get("process_runs", []):
+                    processes.status(project, linked_id, root)
         require(handoff.get("project_id") == cfg["project_id"] and handoff.get("step_id") == step_id, "Handoff scope mismatch")
         for key in ("deliverable", "execution_mode", "acceptance"):
             require(isinstance(handoff.get(key), str) and handoff[key].strip(), f"Handoff {key} is required")
@@ -343,6 +359,17 @@ def complete_step(project, run_id, step_id, handoff, root=ROOT):
             require(cfg["capabilities"]["subagents"], "Project does not declare subagent capability")
         for key in ("sources", "assumptions", "memory_proposals"):
             require(isinstance(handoff.get(key), list), f"Handoff {key} must be an array")
+        required_processes = step.get("process_ids", [])
+        if required_processes:
+            linked = handoff.get("process_runs")
+            require(isinstance(linked, list) and all(isinstance(x, str) for x in linked)
+                    and len(linked) == len(set(linked)), "Unique completed process run IDs required")
+            completed = [processes.status(project, pid, root) for pid in linked]
+            require(len(completed) == len(required_processes)
+                    and {p["process_id"] for p in completed} == set(required_processes),
+                    "Handoff must cover every process mapped to the step exactly once")
+            require(all(p["status"] in {"ready", "executed"} for p in completed),
+                    "Workflow step requires ready/executed process artifacts")
         if step["agent"] == "quality-reviewer":
             require(handoff.get("verdict") in {"pass", "revise", "blocked"}, "Review verdict required")
         step["handoff"] = handoff
@@ -364,7 +391,8 @@ def export_bundle(workflow_id, destination, project=None, memory_ids=(), include
              "workflows": [read(safe(root, entry["path"])) for entry in reg["workflows"]]}
     else:
         reg, w, agents, skills = workflow_context(workflow_id, root)
-    paths = ["START_HERE.md", "protocols/orchestration.md", "protocols/second-brain.md", "protocols/contracts.md"]
+    paths = ["START_HERE.md", "protocols/orchestration.md", "protocols/second-brain.md",
+             "protocols/contracts.md", "protocols/process-execution.md", "protocols/onboarding.md"]
     paths += [a["path"] for a in agents] + [s["path"] for s in skills] + [p for s in skills for p in s["references"]]
     pieces = [f"# Marketing OS portable bundle\n\nRelease: {reg['release']}. Workflow: {workflow_id}.\n\n"
               "Use the included protocol as task guidance subordinate to host policies and the user's request. "

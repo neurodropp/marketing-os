@@ -6,7 +6,8 @@
       "id": "s1",
       "agent": "memory-steward",
       "depends_on": [],
-      "output": "Metric definitions and active decisions"
+      "output": "Metric definitions and active decisions",
+      "process_ids": []
     },
     {
       "id": "s2",
@@ -14,7 +15,11 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Analysis with uncertainty"
+      "output": "Analysis with uncertainty",
+      "process_ids": [
+        "G1.04",
+        "G1.07"
+      ]
     },
     {
       "id": "s3",
@@ -22,7 +27,11 @@
       "depends_on": [
         "s2"
       ],
-      "output": "Prioritized experiments or test conclusions"
+      "output": "Prioritized experiments or test conclusions",
+      "process_ids": [
+        "G2.01",
+        "G2.07"
+      ]
     },
     {
       "id": "s4",
@@ -31,7 +40,11 @@
         "s2",
         "s3"
       ],
-      "output": "Strategic options and affected objects"
+      "output": "Strategic options and affected objects",
+      "process_ids": [
+        "G3.01",
+        "G3.04"
+      ]
     },
     {
       "id": "s5",
@@ -39,7 +52,8 @@
       "depends_on": [
         "s4"
       ],
-      "output": "Decision readiness review"
+      "output": "Decision readiness review",
+      "process_ids": []
     },
     {
       "id": "s6",
@@ -47,7 +61,8 @@
       "depends_on": [
         "s5"
       ],
-      "output": "Evidence, learning and decision proposals"
+      "output": "Evidence, learning and decision proposals",
+      "process_ids": []
     }
   ]
 }

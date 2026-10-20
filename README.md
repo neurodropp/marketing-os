@@ -2,13 +2,13 @@
 
 A portable agentic framework for marketing and brand projects, with a durable second brain for each project.
 
-The framework combines **16 marketing domains, 108 processes and 540 capabilities** with **19 agent roles and 19 modular skills**: an orchestrator, 16 domain specialists, a memory steward and a quality reviewer. Domain coverage is a planning taxonomy; it is not 540 fully implemented automations.
+The framework combines **16 marketing domains, 108 processes and 540 capabilities** with **19 agent roles and 19 modular skills**: an orchestrator, 16 domain specialists, a memory steward and a quality reviewer. Every process now has an operational SOP with input bindings, five capability-specific steps, output requirements and three quality gates. The 540 capabilities are covered by those steps; they are not 540 standalone platform automations.
 
 The repository is in English. Project deliverables can use the project's configured language.
 
 ## What you can use today
 
-- Run a marketing assignment through documented agent roles and focused skills.
+- Execute any of the **108 process SOPs** through focused agents and skills, with saved artifacts and evidence-backed completion.
 - Start a private project workspace with versioned memory, sources, approvals and conflicts.
 - Use ten dependency-aware workflows: brand foundation, campaigns, offers, content, reputation, tracking incidents, retention, lifecycle, performance and strategic reviews.
 - Guide users through resumable brand setup and save deliverables in a standalone folder.
@@ -56,6 +56,20 @@ The onboarding is conducted by the host AI, with local utilities enforcing state
 
 From the brand folder, `python3 mos.py --help` exposes onboarding, memory and workflow commands. `python3 -m mos init` remains available from the framework for a minimal data-only project. Markdown export is retained as a secondary fallback for environments without folder access.
 
+## Operational process library
+
+Use [the process guide](docs/PROCESSES.md) to run any process by ID or let the orchestrator select it from your request. The canonical [process catalog](catalog/processes.json) maps every SOP to its skill and agent.
+
+[Browse all 108 SOPs](catalog/PROCESS_INDEX.md).
+
+- **108 SOPs**, each with distinct operating steps, required inputs, concrete outputs, stop conditions and handoffs.
+- **324 process-specific quality gates** linked to local evidence files.
+- **19 revised skills and 19 revised agent profiles**, with explicit domain boundaries and selective context loading.
+- **10 workflows** whose domain steps require completed process runs; prose-only completion cannot bypass those gates.
+- `process-start`, `process-finish` and `process-status` pin and verify input evidence, definitions, approved memory and artifacts.
+
+See the [engineering review and primary sources](docs/ENGINEERING_REVIEW.md) and [validation record](evals/VALIDATION.md). The host performs the work; the CLI verifies local state and declared evidence. External publishing, account changes and research require actual tools and appropriate authorization.
+
 ## Project second brain
 
 Each project's memory stores evidence, research, brand strategy, offers, decisions, asset references, metrics, learning and session checkpoints. Records carry project scope, sources, versions, status, sensitivity and optional review dates.
@@ -71,6 +85,8 @@ Project workspaces are excluded from framework Git. Back up each one privately o
 | `START_HERE.md`, `AGENTS.md` | Universal entry point and repository guidance |
 | `registry.json` | Versioned agent, skill and workflow catalog |
 | `catalog/taxonomy.json` | English taxonomy with stable domain/process/capability IDs |
+| `catalog/processes.json` | 108 canonical operational contracts |
+| `skills/*/references/processes/` | Readable process-specific SOPs |
 | `agents/` | Role ownership and handoff boundaries |
 | `skills/` | Agent Skills format with focused methods and domain references |
 | `protocols/` | Orchestration, second brain and output contracts |

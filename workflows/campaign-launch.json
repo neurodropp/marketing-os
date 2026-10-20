@@ -6,7 +6,8 @@
       "id": "s1",
       "agent": "memory-steward",
       "depends_on": [],
-      "output": "Approved strategy snapshot and gaps"
+      "output": "Approved strategy snapshot and gaps",
+      "process_ids": []
     },
     {
       "id": "s2",
@@ -14,7 +15,10 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Campaign brief"
+      "output": "Campaign brief",
+      "process_ids": [
+        "O1.04"
+      ]
     },
     {
       "id": "s3",
@@ -22,7 +26,11 @@
       "depends_on": [
         "s2"
       ],
-      "output": "Reviewable assets"
+      "output": "Reviewable assets",
+      "process_ids": [
+        "O2.04",
+        "O2.06"
+      ]
     },
     {
       "id": "s4",
@@ -30,7 +38,11 @@
       "depends_on": [
         "s2"
       ],
-      "output": "Destination and routing specification"
+      "output": "Destination and routing specification",
+      "process_ids": [
+        "O4.01",
+        "O4.07"
+      ]
     },
     {
       "id": "s5",
@@ -39,7 +51,10 @@
         "s3",
         "s4"
       ],
-      "output": "Channel setup and launch readiness report"
+      "output": "Channel setup and launch readiness report",
+      "process_ids": [
+        "O3.07"
+      ]
     },
     {
       "id": "s6",
@@ -47,7 +62,8 @@
       "depends_on": [
         "s5"
       ],
-      "output": "Acceptance review; external actions remain permission-bound"
+      "output": "Acceptance review; external actions remain permission-bound",
+      "process_ids": []
     },
     {
       "id": "s7",
@@ -55,7 +71,8 @@
       "depends_on": [
         "s6"
       ],
-      "output": "Campaign records and pending decisions"
+      "output": "Campaign records and pending decisions",
+      "process_ids": []
     }
   ]
 }

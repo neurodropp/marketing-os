@@ -1,0 +1,1204 @@
+{
+  "schema_version": "1.0",
+  "release": "0.3.0",
+  "evaluation_mode": "target-host behavioral cases; pending unless a separate result record proves execution",
+  "cases": [
+    {
+      "skill": "business-strategy",
+      "process": "F1.03",
+      "status": "not-run-in-target-host",
+      "id": "business-strategy-positive",
+      "type": "positive",
+      "request": "Calculate contribution-based CAC payback for the supplied three-month cohort.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "business-strategy",
+      "process": "F1.03",
+      "status": "not-run-in-target-host",
+      "id": "business-strategy-adjacent",
+      "type": "adjacent",
+      "request": "Customer interviews are unavailable; produce a recruitment guide.",
+      "expected": [
+        "Route primary ownership to customer-research; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "business-strategy",
+      "process": "F1.03",
+      "status": "not-run-in-target-host",
+      "id": "business-strategy-missing",
+      "type": "missing-input",
+      "request": "Calculate contribution-based CAC payback for the supplied three-month cohort. Acquisition cost allocation is missing.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "business-strategy",
+      "process": "F1.03",
+      "status": "not-run-in-target-host",
+      "id": "business-strategy-conflict",
+      "type": "contradictory-memory",
+      "request": "Calculate contribution-based CAC payback for the supplied three-month cohort. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "business-strategy",
+      "process": "F1.03",
+      "status": "not-run-in-target-host",
+      "id": "business-strategy-no-tool",
+      "type": "tool-unavailable",
+      "request": "Calculate contribution-based CAC payback for the supplied three-month cohort. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "customer-research",
+      "process": "F2.04",
+      "status": "not-run-in-target-host",
+      "id": "customer-research-positive",
+      "type": "positive",
+      "request": "Build an interview plan to understand why team accounts stop using the service.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "customer-research",
+      "process": "F2.04",
+      "status": "not-run-in-target-host",
+      "id": "customer-research-adjacent",
+      "type": "adjacent",
+      "request": "Calculate observed payback from a clean revenue and cost table.",
+      "expected": [
+        "Route primary ownership to business-strategy; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "customer-research",
+      "process": "F2.04",
+      "status": "not-run-in-target-host",
+      "id": "customer-research-missing",
+      "type": "missing-input",
+      "request": "Build an interview plan to understand why team accounts stop using the service. No participant access or transcripts are available.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "customer-research",
+      "process": "F2.04",
+      "status": "not-run-in-target-host",
+      "id": "customer-research-conflict",
+      "type": "contradictory-memory",
+      "request": "Build an interview plan to understand why team accounts stop using the service. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "customer-research",
+      "process": "F2.04",
+      "status": "not-run-in-target-host",
+      "id": "customer-research-no-tool",
+      "type": "tool-unavailable",
+      "request": "Build an interview plan to understand why team accounts stop using the service. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "brand-strategy",
+      "process": "F3.03",
+      "status": "not-run-in-target-host",
+      "id": "brand-strategy-positive",
+      "type": "positive",
+      "request": "Turn our approved values into a verbal identity guide with support and sales examples.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "brand-strategy",
+      "process": "F3.03",
+      "status": "not-run-in-target-host",
+      "id": "brand-strategy-adjacent",
+      "type": "adjacent",
+      "request": "Write three final paid-ad headlines from an approved brief.",
+      "expected": [
+        "Route primary ownership to content-production; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "brand-strategy",
+      "process": "F3.03",
+      "status": "not-run-in-target-host",
+      "id": "brand-strategy-missing",
+      "type": "missing-input",
+      "request": "Turn our approved values into a verbal identity guide with support and sales examples. No approved brand promise or tone examples exist.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "brand-strategy",
+      "process": "F3.03",
+      "status": "not-run-in-target-host",
+      "id": "brand-strategy-conflict",
+      "type": "contradictory-memory",
+      "request": "Turn our approved values into a verbal identity guide with support and sales examples. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "brand-strategy",
+      "process": "F3.03",
+      "status": "not-run-in-target-host",
+      "id": "brand-strategy-no-tool",
+      "type": "tool-unavailable",
+      "request": "Turn our approved values into a verbal identity guide with support and sales examples. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "positioning",
+      "process": "F4.01",
+      "status": "not-run-in-target-host",
+      "id": "positioning-positive",
+      "type": "positive",
+      "request": "Compare two category frames and propose a defensible value proposition.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "positioning",
+      "process": "F4.01",
+      "status": "not-run-in-target-host",
+      "id": "positioning-adjacent",
+      "type": "adjacent",
+      "request": "Audit website crawlability and indexing defects.",
+      "expected": [
+        "Route primary ownership to demand-generation; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "positioning",
+      "process": "F4.01",
+      "status": "not-run-in-target-host",
+      "id": "positioning-missing",
+      "type": "missing-input",
+      "request": "Compare two category frames and propose a defensible value proposition. Customer alternatives and supporting proof are unknown.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "positioning",
+      "process": "F4.01",
+      "status": "not-run-in-target-host",
+      "id": "positioning-conflict",
+      "type": "contradictory-memory",
+      "request": "Compare two category frames and propose a defensible value proposition. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "positioning",
+      "process": "F4.01",
+      "status": "not-run-in-target-host",
+      "id": "positioning-no-tool",
+      "type": "tool-unavailable",
+      "request": "Compare two category frames and propose a defensible value proposition. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "offer-design",
+      "process": "F5.04",
+      "status": "not-run-in-target-host",
+      "id": "offer-design-positive",
+      "type": "positive",
+      "request": "Model three pricing tiers including contribution and discount sensitivity.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "offer-design",
+      "process": "F5.04",
+      "status": "not-run-in-target-host",
+      "id": "offer-design-adjacent",
+      "type": "adjacent",
+      "request": "Analyze last quarter campaign attribution without changing prices.",
+      "expected": [
+        "Route primary ownership to performance-analysis; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "offer-design",
+      "process": "F5.04",
+      "status": "not-run-in-target-host",
+      "id": "offer-design-missing",
+      "type": "missing-input",
+      "request": "Model three pricing tiers including contribution and discount sensitivity. Variable delivery costs are missing.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "offer-design",
+      "process": "F5.04",
+      "status": "not-run-in-target-host",
+      "id": "offer-design-conflict",
+      "type": "contradictory-memory",
+      "request": "Model three pricing tiers including contribution and discount sensitivity. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "offer-design",
+      "process": "F5.04",
+      "status": "not-run-in-target-host",
+      "id": "offer-design-no-tool",
+      "type": "tool-unavailable",
+      "request": "Model three pricing tiers including contribution and discount sensitivity. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "journey-design",
+      "process": "F6.06",
+      "status": "not-run-in-target-host",
+      "id": "journey-design-positive",
+      "type": "positive",
+      "request": "Define CRM lifecycle states, transitions, re-entry and suppression precedence.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "journey-design",
+      "process": "F6.06",
+      "status": "not-run-in-target-host",
+      "id": "journey-design-adjacent",
+      "type": "adjacent",
+      "request": "Produce the final welcome email from an approved lifecycle brief.",
+      "expected": [
+        "Route primary ownership to content-production; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "journey-design",
+      "process": "F6.06",
+      "status": "not-run-in-target-host",
+      "id": "journey-design-missing",
+      "type": "missing-input",
+      "request": "Define CRM lifecycle states, transitions, re-entry and suppression precedence. The activation event and source of truth are undefined.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "journey-design",
+      "process": "F6.06",
+      "status": "not-run-in-target-host",
+      "id": "journey-design-conflict",
+      "type": "contradictory-memory",
+      "request": "Define CRM lifecycle states, transitions, re-entry and suppression precedence. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "journey-design",
+      "process": "F6.06",
+      "status": "not-run-in-target-host",
+      "id": "journey-design-no-tool",
+      "type": "tool-unavailable",
+      "request": "Define CRM lifecycle states, transitions, re-entry and suppression precedence. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "marketing-planning",
+      "process": "F7.04",
+      "status": "not-run-in-target-host",
+      "id": "marketing-planning-positive",
+      "type": "positive",
+      "request": "Build an event tracking plan with identity, consent and QA cases.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "marketing-planning",
+      "process": "F7.04",
+      "status": "not-run-in-target-host",
+      "id": "marketing-planning-adjacent",
+      "type": "adjacent",
+      "request": "Diagnose duplicate events in an exported dataset.",
+      "expected": [
+        "Route primary ownership to performance-analysis; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "marketing-planning",
+      "process": "F7.04",
+      "status": "not-run-in-target-host",
+      "id": "marketing-planning-missing",
+      "type": "missing-input",
+      "request": "Build an event tracking plan with identity, consent and QA cases. Consent behavior and field ownership are unknown.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "marketing-planning",
+      "process": "F7.04",
+      "status": "not-run-in-target-host",
+      "id": "marketing-planning-conflict",
+      "type": "contradictory-memory",
+      "request": "Build an event tracking plan with identity, consent and QA cases. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "marketing-planning",
+      "process": "F7.04",
+      "status": "not-run-in-target-host",
+      "id": "marketing-planning-no-tool",
+      "type": "tool-unavailable",
+      "request": "Build an event tracking plan with identity, consent and QA cases. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "creative-strategy",
+      "process": "O1.04",
+      "status": "not-run-in-target-host",
+      "id": "creative-strategy-positive",
+      "type": "positive",
+      "request": "Write a campaign brief with audience tension, proof and distinct creative hypotheses.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "creative-strategy",
+      "process": "O1.04",
+      "status": "not-run-in-target-host",
+      "id": "creative-strategy-adjacent",
+      "type": "adjacent",
+      "request": "Generate final captioned video assets from an accepted storyboard.",
+      "expected": [
+        "Route primary ownership to content-production; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "creative-strategy",
+      "process": "O1.04",
+      "status": "not-run-in-target-host",
+      "id": "creative-strategy-missing",
+      "type": "missing-input",
+      "request": "Write a campaign brief with audience tension, proof and distinct creative hypotheses. The offer terms and proof are not yet agreed.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "creative-strategy",
+      "process": "O1.04",
+      "status": "not-run-in-target-host",
+      "id": "creative-strategy-conflict",
+      "type": "contradictory-memory",
+      "request": "Write a campaign brief with audience tension, proof and distinct creative hypotheses. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "creative-strategy",
+      "process": "O1.04",
+      "status": "not-run-in-target-host",
+      "id": "creative-strategy-no-tool",
+      "type": "tool-unavailable",
+      "request": "Write a campaign brief with audience tension, proof and distinct creative hypotheses. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "content-production",
+      "process": "O2.02",
+      "status": "not-run-in-target-host",
+      "id": "content-production-positive",
+      "type": "positive",
+      "request": "Produce source-backed landing copy with CTA, objections and truthful proof.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "content-production",
+      "process": "O2.02",
+      "status": "not-run-in-target-host",
+      "id": "content-production-adjacent",
+      "type": "adjacent",
+      "request": "Decide which audience the company should prioritize strategically.",
+      "expected": [
+        "Route primary ownership to positioning; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "content-production",
+      "process": "O2.02",
+      "status": "not-run-in-target-host",
+      "id": "content-production-missing",
+      "type": "missing-input",
+      "request": "Produce source-backed landing copy with CTA, objections and truthful proof. No evidence supports the requested quantified performance claim.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "content-production",
+      "process": "O2.02",
+      "status": "not-run-in-target-host",
+      "id": "content-production-conflict",
+      "type": "contradictory-memory",
+      "request": "Produce source-backed landing copy with CTA, objections and truthful proof. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "content-production",
+      "process": "O2.02",
+      "status": "not-run-in-target-host",
+      "id": "content-production-no-tool",
+      "type": "tool-unavailable",
+      "request": "Produce source-backed landing copy with CTA, objections and truthful proof. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "demand-generation",
+      "process": "O3.03",
+      "status": "not-run-in-target-host",
+      "id": "demand-generation-positive",
+      "type": "positive",
+      "request": "Prepare a paid-social setup plan with tracking QA and spend boundaries.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "demand-generation",
+      "process": "O3.03",
+      "status": "not-run-in-target-host",
+      "id": "demand-generation-adjacent",
+      "type": "adjacent",
+      "request": "Repair a checkout form and test routing failures.",
+      "expected": [
+        "Route primary ownership to conversion-enablement; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "demand-generation",
+      "process": "O3.03",
+      "status": "not-run-in-target-host",
+      "id": "demand-generation-missing",
+      "type": "missing-input",
+      "request": "Prepare a paid-social setup plan with tracking QA and spend boundaries. There is no ad-account access or launch authorization.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "demand-generation",
+      "process": "O3.03",
+      "status": "not-run-in-target-host",
+      "id": "demand-generation-conflict",
+      "type": "contradictory-memory",
+      "request": "Prepare a paid-social setup plan with tracking QA and spend boundaries. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "demand-generation",
+      "process": "O3.03",
+      "status": "not-run-in-target-host",
+      "id": "demand-generation-no-tool",
+      "type": "tool-unavailable",
+      "request": "Prepare a paid-social setup plan with tracking QA and spend boundaries. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "conversion-enablement",
+      "process": "O4.03",
+      "status": "not-run-in-target-host",
+      "id": "conversion-enablement-positive",
+      "type": "positive",
+      "request": "Define fit and intent lead rules with routing and worked edge cases.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "conversion-enablement",
+      "process": "O4.03",
+      "status": "not-run-in-target-host",
+      "id": "conversion-enablement-adjacent",
+      "type": "adjacent",
+      "request": "Develop a long-term brand architecture across products.",
+      "expected": [
+        "Route primary ownership to brand-strategy; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "conversion-enablement",
+      "process": "O4.03",
+      "status": "not-run-in-target-host",
+      "id": "conversion-enablement-missing",
+      "type": "missing-input",
+      "request": "Define fit and intent lead rules with routing and worked edge cases. Sales acceptance criteria and fallback owner are missing.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "conversion-enablement",
+      "process": "O4.03",
+      "status": "not-run-in-target-host",
+      "id": "conversion-enablement-conflict",
+      "type": "contradictory-memory",
+      "request": "Define fit and intent lead rules with routing and worked edge cases. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "conversion-enablement",
+      "process": "O4.03",
+      "status": "not-run-in-target-host",
+      "id": "conversion-enablement-no-tool",
+      "type": "tool-unavailable",
+      "request": "Define fit and intent lead rules with routing and worked edge cases. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "community-management",
+      "process": "O5.04",
+      "status": "not-run-in-target-host",
+      "id": "community-management-positive",
+      "type": "positive",
+      "request": "Draft a response pack for a public complaint using only verified incident facts.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "community-management",
+      "process": "O5.04",
+      "status": "not-run-in-target-host",
+      "id": "community-management-adjacent",
+      "type": "adjacent",
+      "request": "Design an automated renewal program for eligible customers.",
+      "expected": [
+        "Route primary ownership to lifecycle-marketing; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "community-management",
+      "process": "O5.04",
+      "status": "not-run-in-target-host",
+      "id": "community-management-missing",
+      "type": "missing-input",
+      "request": "Draft a response pack for a public complaint using only verified incident facts. The cause and remedy of the incident are not verified.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "community-management",
+      "process": "O5.04",
+      "status": "not-run-in-target-host",
+      "id": "community-management-conflict",
+      "type": "contradictory-memory",
+      "request": "Draft a response pack for a public complaint using only verified incident facts. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "community-management",
+      "process": "O5.04",
+      "status": "not-run-in-target-host",
+      "id": "community-management-no-tool",
+      "type": "tool-unavailable",
+      "request": "Draft a response pack for a public complaint using only verified incident facts. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "lifecycle-marketing",
+      "process": "O6.02",
+      "status": "not-run-in-target-host",
+      "id": "lifecycle-marketing-positive",
+      "type": "positive",
+      "request": "Design a renewal journey with eligibility, preferences and contact-pressure rules.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "lifecycle-marketing",
+      "process": "O6.02",
+      "status": "not-run-in-target-host",
+      "id": "lifecycle-marketing-adjacent",
+      "type": "adjacent",
+      "request": "Negotiate new commercial pricing and guarantee terms.",
+      "expected": [
+        "Route primary ownership to offer-design; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "lifecycle-marketing",
+      "process": "O6.02",
+      "status": "not-run-in-target-host",
+      "id": "lifecycle-marketing-missing",
+      "type": "missing-input",
+      "request": "Design a renewal journey with eligibility, preferences and contact-pressure rules. Suppression data is unavailable.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "lifecycle-marketing",
+      "process": "O6.02",
+      "status": "not-run-in-target-host",
+      "id": "lifecycle-marketing-conflict",
+      "type": "contradictory-memory",
+      "request": "Design a renewal journey with eligibility, preferences and contact-pressure rules. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "lifecycle-marketing",
+      "process": "O6.02",
+      "status": "not-run-in-target-host",
+      "id": "lifecycle-marketing-no-tool",
+      "type": "tool-unavailable",
+      "request": "Design a renewal journey with eligibility, preferences and contact-pressure rules. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "performance-analysis",
+      "process": "G1.04",
+      "status": "not-run-in-target-host",
+      "id": "performance-analysis-positive",
+      "type": "positive",
+      "request": "Reconcile channel spend and qualified conversions with explicit attribution limits.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "performance-analysis",
+      "process": "G1.04",
+      "status": "not-run-in-target-host",
+      "id": "performance-analysis-adjacent",
+      "type": "adjacent",
+      "request": "Design a new randomized onboarding experiment before exposure.",
+      "expected": [
+        "Route primary ownership to experimentation; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "performance-analysis",
+      "process": "G1.04",
+      "status": "not-run-in-target-host",
+      "id": "performance-analysis-missing",
+      "type": "missing-input",
+      "request": "Reconcile channel spend and qualified conversions with explicit attribution limits. Conversion windows differ and source reconciliation is incomplete.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "performance-analysis",
+      "process": "G1.04",
+      "status": "not-run-in-target-host",
+      "id": "performance-analysis-conflict",
+      "type": "contradictory-memory",
+      "request": "Reconcile channel spend and qualified conversions with explicit attribution limits. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "performance-analysis",
+      "process": "G1.04",
+      "status": "not-run-in-target-host",
+      "id": "performance-analysis-no-tool",
+      "type": "tool-unavailable",
+      "request": "Reconcile channel spend and qualified conversions with explicit attribution limits. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "experimentation",
+      "process": "G2.02",
+      "status": "not-run-in-target-host",
+      "id": "experimentation-positive",
+      "type": "positive",
+      "request": "Design a workspace-randomized activation test with a fixed decision rule.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "experimentation",
+      "process": "G2.02",
+      "status": "not-run-in-target-host",
+      "id": "experimentation-adjacent",
+      "type": "adjacent",
+      "request": "Publish a routine operational dashboard with existing metric definitions.",
+      "expected": [
+        "Route primary ownership to performance-analysis; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "experimentation",
+      "process": "G2.02",
+      "status": "not-run-in-target-host",
+      "id": "experimentation-missing",
+      "type": "missing-input",
+      "request": "Design a workspace-randomized activation test with a fixed decision rule. Baseline activation and eligible traffic are missing.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "experimentation",
+      "process": "G2.02",
+      "status": "not-run-in-target-host",
+      "id": "experimentation-conflict",
+      "type": "contradictory-memory",
+      "request": "Design a workspace-randomized activation test with a fixed decision rule. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "experimentation",
+      "process": "G2.02",
+      "status": "not-run-in-target-host",
+      "id": "experimentation-no-tool",
+      "type": "tool-unavailable",
+      "request": "Design a workspace-randomized activation test with a fixed decision rule. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "growth-strategy",
+      "process": "G3.03",
+      "status": "not-run-in-target-host",
+      "id": "growth-strategy-positive",
+      "type": "positive",
+      "request": "Assess whether growth from 100 to 300 monthly accounts is viable with capacity of 120.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "growth-strategy",
+      "process": "G3.03",
+      "status": "not-run-in-target-host",
+      "id": "growth-strategy-adjacent",
+      "type": "adjacent",
+      "request": "Rewrite a newsletter subject line while preserving the approved offer.",
+      "expected": [
+        "Route primary ownership to content-production; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "growth-strategy",
+      "process": "G3.03",
+      "status": "not-run-in-target-host",
+      "id": "growth-strategy-missing",
+      "type": "missing-input",
+      "request": "Assess whether growth from 100 to 300 monthly accounts is viable with capacity of 120. Marginal acquisition costs and delivery expansion capacity are unknown.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "growth-strategy",
+      "process": "G3.03",
+      "status": "not-run-in-target-host",
+      "id": "growth-strategy-conflict",
+      "type": "contradictory-memory",
+      "request": "Assess whether growth from 100 to 300 monthly accounts is viable with capacity of 120. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "growth-strategy",
+      "process": "G3.03",
+      "status": "not-run-in-target-host",
+      "id": "growth-strategy-no-tool",
+      "type": "tool-unavailable",
+      "request": "Assess whether growth from 100 to 300 monthly accounts is viable with capacity of 120. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "marketing-orchestrate",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "marketing-orchestrate-positive",
+      "type": "positive",
+      "request": "Coordinate an offer launch using bounded specialist work and saved process evidence.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "marketing-orchestrate",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "marketing-orchestrate-adjacent",
+      "type": "adjacent",
+      "request": "Retrieve one approved audience record and its competing proposals.",
+      "expected": [
+        "Route primary ownership to project-memory; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "marketing-orchestrate",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "marketing-orchestrate-missing",
+      "type": "missing-input",
+      "request": "Coordinate an offer launch using bounded specialist work and saved process evidence. The active brand folder has not been identified.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "marketing-orchestrate",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "marketing-orchestrate-conflict",
+      "type": "contradictory-memory",
+      "request": "Coordinate an offer launch using bounded specialist work and saved process evidence. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "marketing-orchestrate",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "marketing-orchestrate-no-tool",
+      "type": "tool-unavailable",
+      "request": "Coordinate an offer launch using bounded specialist work and saved process evidence. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "project-memory",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "project-memory-positive",
+      "type": "positive",
+      "request": "Reconcile a new audience insight with a conflicting approved decision without deleting history.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "project-memory",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "project-memory-adjacent",
+      "type": "adjacent",
+      "request": "Choose the best strategic growth market from a research dossier.",
+      "expected": [
+        "Route primary ownership to growth-strategy; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "project-memory",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "project-memory-missing",
+      "type": "missing-input",
+      "request": "Reconcile a new audience insight with a conflicting approved decision without deleting history. The source and decision authority are missing.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "project-memory",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "project-memory-conflict",
+      "type": "contradictory-memory",
+      "request": "Reconcile a new audience insight with a conflicting approved decision without deleting history. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "project-memory",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "project-memory-no-tool",
+      "type": "tool-unavailable",
+      "request": "Reconcile a new audience insight with a conflicting approved decision without deleting history. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    },
+    {
+      "skill": "marketing-review",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "marketing-review-positive",
+      "type": "positive",
+      "request": "Review actual campaign assets against the process gates and observed action evidence.",
+      "expected": [
+        "Select the indicated skill/process scope.",
+        "Save the requested artifact and source references.",
+        "Assess process-specific gates and report truthful status."
+      ]
+    },
+    {
+      "skill": "marketing-review",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "marketing-review-adjacent",
+      "type": "adjacent",
+      "request": "Write the first draft of an editorial article from supplied sources.",
+      "expected": [
+        "Route primary ownership to content-production; do not force the tested skill."
+      ]
+    },
+    {
+      "skill": "marketing-review",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "marketing-review-missing",
+      "type": "missing-input",
+      "request": "Review actual campaign assets against the process gates and observed action evidence. Only an author summary is supplied; the artifacts are unavailable.",
+      "expected": [
+        "Explain the decision impact of this specific gap.",
+        "Produce useful bounded draft work without inventing the missing input.",
+        "Do not mark unsupported results ready."
+      ]
+    },
+    {
+      "skill": "marketing-review",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "marketing-review-conflict",
+      "type": "contradictory-memory",
+      "request": "Review actual campaign assets against the process gates and observed action evidence. The approved brand record targets enterprise buyers; a new unapproved note says switch to students.",
+      "expected": [
+        "Preserve both records and their approval states.",
+        "Do not silently replace the approved audience.",
+        "Resolve the conflict only if it affects the requested outcome."
+      ]
+    },
+    {
+      "skill": "marketing-review",
+      "process": null,
+      "status": "not-run-in-target-host",
+      "id": "marketing-review-no-tool",
+      "type": "tool-unavailable",
+      "request": "Review actual campaign assets against the process gates and observed action evidence. Only local file tools are available; no web, renderer, account connector or subagent tools.",
+      "expected": [
+        "Use available local evidence.",
+        "Label unperformed research, rendering, delegation and external actions accurately.",
+        "Save a draft or implementation specification with a concrete unblocker where necessary."
+      ]
+    }
+  ]
+}

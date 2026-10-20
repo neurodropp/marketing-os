@@ -6,7 +6,8 @@
       "id": "s1",
       "agent": "memory-steward",
       "depends_on": [],
-      "output": "Current context, unknowns and conflicts"
+      "output": "Current context, unknowns and conflicts",
+      "process_ids": []
     },
     {
       "id": "s2",
@@ -14,7 +15,12 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Evidence-backed audience and market synthesis"
+      "output": "Evidence-backed audience and market synthesis",
+      "process_ids": [
+        "F2.01",
+        "F2.03",
+        "F2.05"
+      ]
     },
     {
       "id": "s3",
@@ -22,7 +28,11 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Economic mandate and constraints"
+      "output": "Economic mandate and constraints",
+      "process_ids": [
+        "F1.01",
+        "F1.03"
+      ]
     },
     {
       "id": "s4",
@@ -31,7 +41,11 @@
         "s2",
         "s3"
       ],
-      "output": "Brand platform proposal"
+      "output": "Brand platform proposal",
+      "process_ids": [
+        "F3.01",
+        "F3.03"
+      ]
     },
     {
       "id": "s5",
@@ -41,7 +55,11 @@
         "s3",
         "s4"
       ],
-      "output": "Positioning and proof proposal"
+      "output": "Positioning and proof proposal",
+      "process_ids": [
+        "F4.03",
+        "F4.04"
+      ]
     },
     {
       "id": "s6",
@@ -49,7 +67,11 @@
       "depends_on": [
         "s5"
       ],
-      "output": "Offer structure proposal"
+      "output": "Offer structure proposal",
+      "process_ids": [
+        "F5.01",
+        "F5.02"
+      ]
     },
     {
       "id": "s7",
@@ -57,7 +79,11 @@
       "depends_on": [
         "s6"
       ],
-      "output": "Journey and handoff specification"
+      "output": "Journey and handoff specification",
+      "process_ids": [
+        "F6.01",
+        "F6.03"
+      ]
     },
     {
       "id": "s8",
@@ -65,7 +91,11 @@
       "depends_on": [
         "s7"
       ],
-      "output": "Prioritized marketing roadmap"
+      "output": "Prioritized marketing roadmap",
+      "process_ids": [
+        "F7.01",
+        "F7.02"
+      ]
     },
     {
       "id": "s9",
@@ -73,7 +103,8 @@
       "depends_on": [
         "s8"
       ],
-      "output": "Review with evidence and revision needs"
+      "output": "Review with evidence and revision needs",
+      "process_ids": []
     },
     {
       "id": "s10",
@@ -81,7 +112,8 @@
       "depends_on": [
         "s9"
       ],
-      "output": "Versioned memory proposals and session checkpoint"
+      "output": "Versioned memory proposals and session checkpoint",
+      "process_ids": []
     }
   ]
 }

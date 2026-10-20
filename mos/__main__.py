@@ -4,13 +4,30 @@ import json
 import sys
 
 from . import core as c
-from . import onboarding, workspace
+from . import onboarding, workspace, processes
 
 
 def main(argv=None):
     p = argparse.ArgumentParser(description="Local Marketing OS workspace, memory and handoff utilities")
     sub = p.add_subparsers(dest="command", required=True)
     sub.add_parser("validate", help="Validate the repository graph, skills and workflows")
+    q = sub.add_parser("process-list", help="List operational process contracts")
+    q.add_argument("--domain")
+    q = sub.add_parser("process-show", help="Show one SOP contract and input template")
+    q.add_argument("process_id")
+    q = sub.add_parser("process-start", help="Create a pinned process work order; does not invoke an LLM")
+    q.add_argument("project")
+    q.add_argument("--process", required=True)
+    q.add_argument("--id", required=True)
+    q.add_argument("--objective", required=True)
+    q.add_argument("--inputs-file", required=True)
+    q = sub.add_parser("process-finish", help="Record artifacts and quality evidence for a process")
+    q.add_argument("project")
+    q.add_argument("--run", required=True)
+    q.add_argument("--file", required=True)
+    q = sub.add_parser("process-status", help="Read process state and verify pinned evidence")
+    q.add_argument("project")
+    q.add_argument("--run", required=True)
     q = sub.add_parser("workspace-init", help="Create a standalone brand folder with guided onboarding")
     q.add_argument("path")
     q.add_argument("--id", required=True)
@@ -68,6 +85,17 @@ def main(argv=None):
     try:
         if a.command == "validate":
             result = c.validate_repo()
+        elif a.command == "process-list":
+            result = [{"id": x["id"], "name": x["name"], "agent": x["agent"], "path": x["path"]}
+                      for x in processes.catalog()["processes"] if not a.domain or x["domain"] == a.domain]
+        elif a.command == "process-show":
+            result = processes.show(a.process_id)
+        elif a.command == "process-start":
+            result = processes.start(a.project, a.process, a.id, a.objective, c.read(a.inputs_file))
+        elif a.command == "process-finish":
+            result = processes.finish(a.project, a.run, c.read(a.file))
+        elif a.command == "process-status":
+            result = processes.status(a.project, a.run)
         elif a.command == "workspace-init":
             result = workspace.initialize(a.path, a.id, a.brand)
         elif a.command == "onboarding-status":

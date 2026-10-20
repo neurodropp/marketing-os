@@ -18,7 +18,7 @@ START = """# Start this brand workspace
 1. Read project.json and run `python3 mos.py onboarding-status .` from this folder.
 2. If setup is incomplete, follow `.marketing-os/protocols/onboarding.md`. Ask only the next useful block of questions, save each reply, and resume from disk on subsequent sessions. Never run the entire questionnaire at once.
 3. Read confirmed onboarding answers as user-provided background, then `python3 mos.py memory-search .` for approved decisions, proposals and conflicts. Intake assumptions remain assumptions even after summary confirmation.
-4. Read the latest session file in memory/sessions, if present. Identify the user's current outcome, choose relevant profiles from .marketing-os/agents and skills from .marketing-os/skills, and follow .marketing-os/protocols/orchestration.md.
+4. Read the latest session file in memory/sessions, if present. Identify the user's current outcome, choose relevant profiles from .marketing-os/agents and skills from .marketing-os/skills, and follow .marketing-os/protocols/orchestration.md. Select process IDs using `python3 mos.py process-show ID`; create pinned work orders with process-start and record artifact/gate evidence with process-finish. Workflow handoffs must link their required process runs.
 5. Write outputs to brand/, research/, strategy/, campaigns/, content/ or reports/. Keep source files in inbox/. Use memory/records for versioned memory through mos.py; never overwrite history.
 6. At session end save a new dated Markdown checkpoint in memory/sessions (use a timestamp plus unique suffix; never overwrite). Include completed file paths, open questions, pending decisions, active run, next action and onboarding revision. Explain what changed.
 

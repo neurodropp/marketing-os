@@ -39,3 +39,9 @@ Review changes before Git commit. Do not package project workspaces, user attach
 Repeated project failures or successful techniques may justify a skill improvement. Store the observation as project learning first. Propose a framework change with the reusable lesson, supporting cases, affected skills and an evaluation plan. Remove private brand details before promoting the lesson into the shared framework.
 
 Evaluate the proposed change, bump versions and publish a release. A project can choose when to upgrade. Project memory, approved strategy and active runs remain separate from the shared skill catalog; an agent never rewrites its own operating contract during a live run just to make a task pass.
+
+## Maintain operational process contracts
+
+Every taxonomy process must have one catalog/processes.json entry, an owning skill reference and a rendered SOP. Keep the five stable capability IDs mapped to their operating steps. Bind workflow domain steps to process_ids owned by the assigned agent. Their completion requires matching ready/executed process runs; use a smaller custom workflow for smaller scope rather than removing evidence gates.
+
+Update the canonical contract and the skill/process versions together. Render with scripts/render_processes.py, check drift with --check, then run validation, tests and relevant synthetic/behavioral cases. Process gates must describe observable deliverable quality, not merely the presence of a heading. Preserve existing IDs and document any contract change that affects old runs.

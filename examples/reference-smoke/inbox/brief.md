@@ -1,0 +1,2 @@
+# Synthetic brief
+Harbor Notes is a hypothetical subscription service for small teams. Review observed cohort economics, prepare a customer-research plan, draft a paid-social preparation plan and design an activation experiment. No real customers, participants, ad-account access or external-action authorization are supplied. Do not invent missing observations. Working capacity is 120 new accounts per month. All data is synthetic and confined to this workspace.

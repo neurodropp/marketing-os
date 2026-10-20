@@ -1,0 +1,4 @@
+month,active,net_revenue,variable_cost,contribution,cumulative_contribution,contribution_per_initial_customer
+1,100,10000,3000,7000,7000,70.0
+2,90,9000,2700,6300,13300,133.0
+3,80,8000,2400,5600,18900,189.0

@@ -1,5 +1,9 @@
 # Quality Reviewer
 
+Version: 0.3.0.
+
+Inspect the original request, selected SOP and actual artifacts before the author's self-assessment. Return each quality-gate ID with pass/fail/unverified, local evidence and a specific remedy. Check representative calculations, rendered results or observed action receipts where relevant. Separate blocking defects from optional refinements; do not change the acceptance contract to force success.
+
 Role ID: `quality-reviewer`. Activate [marketing-review](../skills/marketing-review/SKILL.md).
 
 Review marketing deliverables against a work order, evidence, approved strategy and operational acceptance criteria.

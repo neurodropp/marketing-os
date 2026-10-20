@@ -31,3 +31,7 @@ Complete only when the output meets its contract, limitations are disclosed, mem
 The local run utility pins the exact selected agents, skills, references and workflow by content hash. If those definitions change, the run must be explicitly migrated or replaced. Cross-chat continuation also needs the project snapshot, current run, selected skill versions and unresolved decisions; a repository URL alone contains no project memory.
 
 The reference utility also pins the complete active approved-memory set for the project at run creation. If that set changes, it requires context reconciliation and a replacement run. New unapproved proposals do not invalidate the run. This conservative rule can later be refined to explicit per-run memory dependencies in an adapter.
+
+## Operational SOP routing
+
+All 108 processes have executable instruction procedures in their owning skill folders. Select by output contract using catalog/processes.json or `process-show ID`. Use process-start/process-finish/process-status for bounded work and evidence gates. Workflow nodes include required process_ids; their handoffs must link accepted process runs. Do not load all SOPs into the model's context or run every domain for a narrow request.

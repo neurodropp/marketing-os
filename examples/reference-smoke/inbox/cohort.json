@@ -1,0 +1,21 @@
+{
+  "synthetic": true,
+  "project_id": "synthetic-brand",
+  "brand": "Harbor Notes (synthetic)",
+  "currency": "EUR",
+  "revenue_basis": "Collected subscription revenue excluding VAT; no refunds in this fixture",
+  "initial_customers": 100,
+  "allocated_acquisition_cost": 14000,
+  "monthly_price": 100,
+  "variable_cost_per_active_customer_month": 30,
+  "active_customers": [
+    100,
+    90,
+    80
+  ],
+  "observation_months": 3,
+  "fulfillment_capacity_new_customers_per_month": 120,
+  "research_participants_available": false,
+  "live_ad_account_access": false,
+  "authorized_external_actions": []
+}

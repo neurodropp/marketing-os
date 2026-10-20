@@ -6,7 +6,8 @@
       "id": "s1",
       "agent": "memory-steward",
       "depends_on": [],
-      "output": "Lifecycle states and cohort data"
+      "output": "Lifecycle states and cohort data",
+      "process_ids": []
     },
     {
       "id": "s2",
@@ -14,7 +15,10 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Retention diagnosis"
+      "output": "Retention diagnosis",
+      "process_ids": [
+        "G1.05"
+      ]
     },
     {
       "id": "s3",
@@ -22,7 +26,11 @@
       "depends_on": [
         "s1"
       ],
-      "output": "Customer friction and loss evidence"
+      "output": "Customer friction and loss evidence",
+      "process_ids": [
+        "F2.04",
+        "F2.05"
+      ]
     },
     {
       "id": "s4",
@@ -31,7 +39,11 @@
         "s2",
         "s3"
       ],
-      "output": "Intervention proposal"
+      "output": "Intervention proposal",
+      "process_ids": [
+        "O6.03",
+        "O6.05"
+      ]
     },
     {
       "id": "s5",
@@ -39,7 +51,10 @@
       "depends_on": [
         "s4"
       ],
-      "output": "Evaluation design"
+      "output": "Evaluation design",
+      "process_ids": [
+        "G2.02"
+      ]
     },
     {
       "id": "s6",
@@ -47,7 +62,8 @@
       "depends_on": [
         "s5"
       ],
-      "output": "Retention intervention review"
+      "output": "Retention intervention review",
+      "process_ids": []
     },
     {
       "id": "s7",
@@ -55,7 +71,8 @@
       "depends_on": [
         "s6"
       ],
-      "output": "Program and learning proposals"
+      "output": "Program and learning proposals",
+      "process_ids": []
     }
   ]
 }

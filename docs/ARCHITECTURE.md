@@ -21,7 +21,7 @@ flowchart TD
 
 The 16 specialists follow Foundation F1–F7, Operations O1–O6 and Intelligence & Growth G1–G3. Each role owns one domain but can invoke additional skills assigned through the registry. Orchestrator, reviewer and memory steward are control roles, not new marketing domains.
 
-An agent is a responsibility and work-order contract. A skill is a reusable method that can evolve independently. A workflow is a dependency graph over agent roles. A run is a project-specific execution record pinned to concrete definitions. A second-brain record is knowledge or a decision, not an executable instruction.
+An agent is a responsibility and work-order contract. A skill is a reusable method that can evolve independently. A process is a versioned SOP with input bindings, operating steps, output contracts and evidence gates. A workflow is a dependency graph over roles with required process mappings. A run is a project-specific execution record pinned to concrete definitions. A second-brain record is knowledge or a decision, not an executable instruction.
 
 ## Context budget
 
@@ -35,7 +35,7 @@ The JSON record store is authoritative in the reference implementation. A search
 
 ## Runtime semantics
 
-`plan` creates a dependency graph with pinned content hashes. `complete-step` validates scope, required fields, declared execution mode and completed dependencies. A failed review blocks downstream steps. Definition changes require a new run or an explicit migration. These are deterministic checks; output quality is evaluated by the reviewer and the user.
+`plan` creates a dependency graph with pinned content hashes. `complete-step` validates scope, required fields, declared execution mode, completed dependencies and the required ready/executed process runs. `process-start` pins source evidence and context; `process-finish` records artifacts and criterion-level review; `process-status` detects stale or changed evidence. A failed review blocks downstream steps. Definition changes require a new run or an explicit migration. These are deterministic checks; output quality is evaluated by the reviewer and the user.
 
 The CLI writes local files and never runs arbitrary commands from memory, skills or registry data. It does not perform external side effects. File locks serialize utility writes; direct manual edits are outside those controls. Use access control and backups appropriate to the real deployment.
 
